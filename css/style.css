@@ -1,24 +1,41 @@
 header {
   display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #222021;
+  grid-template-columns: 1fr 3fr 1fr;
   font-size: 2rem;
-  color: blue;
+  color: #fcee25;
 }
 header > h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+header > #logo {
+  height: 7rem;
+  align-self: start;
+  justify-self: start;
+}
+header > #socials {
+  display: grid;
+  justify-items: end;
+  align-items: end;
+}
+header > #socials > img {
+  padding-bottom: 3px;
+  height: 2rem;
 }
 
 #topbar {
-  display: grid;
-  display: flexbox;
   border: 2px solid black;
   background-color: black;
 }
 #topbar > button {
+  display: inline-flex;
   width: 5rem;
 }
 
 html {
-  background-color: bisque;
+  background-color: #222021;
   padding: 0;
   margin: 0;
 }/*# sourceMappingURL=style.css.map */

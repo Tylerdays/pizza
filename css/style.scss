@@ -1,9 +1,17 @@
 @use "header";  
 
 html{
-    background-color: #222021;
+    background-color: black;
+    color: white;
     padding: 0;
     margin: 0;
 }
+main{
 
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    background-color: #fcee25;
+}
 

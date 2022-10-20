@@ -1,7 +1,8 @@
 header {
   display: grid;
+  flex-flow: column;
   align-items: center;
-  justify-items: center;
+  justify-items: end;
   background-color: #222021;
   grid-template-columns: 1fr 3fr 1fr;
   font-size: 2rem;
@@ -15,27 +16,36 @@ header > #logo {
   align-self: start;
   justify-self: start;
 }
-header > #socials {
-  display: grid;
-  justify-items: end;
-  align-items: end;
-}
 header > #socials > img {
+  display: grid;
   padding-bottom: 3px;
   height: 2rem;
+  justify-content: end;
+  align-content: end;
 }
 
 #topbar {
   border: 2px solid black;
-  background-color: black;
+  background-color: #fcee25;
+  margin-bottom: 0.3rem;
 }
 #topbar > button {
+  color: white;
+  background-color: black;
   display: inline-flex;
-  width: 5rem;
 }
 
 html {
-  background-color: #222021;
+  background-color: black;
+  color: white;
   padding: 0;
   margin: 0;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  background-color: #fcee25;
 }/*# sourceMappingURL=style.css.map */

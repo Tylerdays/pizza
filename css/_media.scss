@@ -1,12 +1,21 @@
+@use "header";
+@import "variables";
+
+
 @media only screen and (min-width: 500px){
     /* For Mobile */
     html{
-    max-width: 500px;
+    max-width: 475px;
     background-color: black;
+    header{
+        max-width: 85vw;
+    }
+    main{
+        max-width: 80vw;
+        max-height: 100vw;
+    }
     }
 }
-
-
 @media only screen and (min-width: 750px){
     /* For tablet */
     html{

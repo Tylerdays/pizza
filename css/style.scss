@@ -1,16 +1,23 @@
 @use "header";  
 @use "media";
+@import "variables";
+
 html{
     color: white;
     padding: 0;
     margin: 0;
 }
 main{
-
     display: grid;
+    max-width: 75vw;
     justify-content: center;
     align-content: center;
     color: black;
     background-color: #fcee25;
+    >.specials{
+        display: inline-block;
+        margin: 1fr 1fr 1fr 1fr;
+        
+    }
 }
 

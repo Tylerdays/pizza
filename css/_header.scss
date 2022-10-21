@@ -1,35 +1,31 @@
+@import "variables";
+
 header{
     display: grid;
     flex-flow: column;
     align-items: center;
     justify-items: end;
-    background-color: #222021;
-    grid-template-columns: 1fr 3fr 1fr;
+    background-color: $bgcol;
+    grid-template-columns: 1fr 1fr;
     font-size: 2rem;
-    color: #fcee25;
-        >h1{
-            font-size: 2rem;
-            }
+    color: $tcol;
             >#logo{
             height: 7rem;
             align-self: start;
             justify-self: start;
             }
             >#socials>img{
-            display: grid;
             padding-bottom: 3px;
-            height: 2rem;
-            justify-content: end;
-            align-content: end;
+            height: 3vh;
             }
 }
     
 #topbar{
     border: 2px solid black;
-    background-color: #fcee25;
+    background-color: $tcol;
     margin-bottom: .3rem;
     >button{
-        color: white;
+        color: $fcol;
         background-color: black;
         display: inline-flex;
     }

@@ -4,12 +4,9 @@ header {
   align-items: center;
   justify-items: end;
   background-color: #222021;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
   font-size: 2rem;
   color: #fcee25;
-}
-header > h1 {
-  font-size: 2rem;
 }
 header > #logo {
   height: 7rem;
@@ -17,11 +14,8 @@ header > #logo {
   justify-self: start;
 }
 header > #socials > img {
-  display: grid;
   padding-bottom: 3px;
-  height: 2rem;
-  justify-content: end;
-  align-content: end;
+  height: 3vh;
 }
 
 #topbar {
@@ -38,8 +32,15 @@ header > #socials > img {
 @media only screen and (min-width: 500px) {
   /* For Mobile */
   html {
-    max-width: 500px;
+    max-width: 475px;
     background-color: black;
+  }
+  html header {
+    max-width: 85vw;
+  }
+  html main {
+    max-width: 80vw;
+    max-height: 100vw;
   }
 }
 @media only screen and (min-width: 750px) {
@@ -64,8 +65,13 @@ html {
 
 main {
   display: grid;
+  max-width: 75vw;
   justify-content: center;
   align-content: center;
   color: black;
   background-color: #fcee25;
+}
+main > .specials {
+  display: inline-block;
+  margin: 1fr 1fr 1fr 1fr;
 }/*# sourceMappingURL=style.css.map */

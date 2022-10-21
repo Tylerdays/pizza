@@ -70,7 +70,7 @@ html {
   font-family: "Times New Roman", Times, serif;
 }
 
-main {
+main, #welcome {
   display: grid;
   min-width: 384px;
   justify-content: center;
@@ -78,20 +78,19 @@ main {
   color: black;
   background-color: #fcee25;
 }
-main > .specials {
+main > .specials, #welcome > .specials {
   display: grid;
   text-align: center;
 }
-main > .specials > p {
+main > .specials > p, #welcome > .specials > p {
   font-size: 20px;
 }
-main > .specials > .num {
+main > .specials > .num, #welcome > .specials > .num {
   font-size: 20px;
   font-weight: bold;
 }
 
-> .welcome {
+#welcome {
   display: grid;
-  background-color: blue;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@ html{
     margin: 0;
     font-family:'Times New Roman', Times, serif;
 }
-main{
+main, #welcome{
     display: grid;
     min-width: 384px;
     justify-content: center;
@@ -28,9 +28,8 @@ main{
             }
     }
 }
-    >.welcome{
+#welcome{
         display: grid;
-        background-color: blue;
-        margin-bottom: 10px;
+        margin-top: 10px;
 }
 

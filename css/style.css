@@ -34,15 +34,20 @@ header > #socials > img {
   text-align: center;
   margin: 5px 3px 0px 3px;
   color: white;
-  background-color: black;
+  background-color: #222021;
   display: inline-flex;
 }
 
+@media only screen and (min-width: 100px) {
+  html {
+    background-color: #222021;
+  }
+}
 @media only screen and (min-width: 360px) {
   /* For Mobile */
   html {
     max-width: 384px;
-    background-color: black;
+    background-color: #222021;
   }
   html header {
     max-width: 85vw;
@@ -65,32 +70,52 @@ header > #socials > img {
 html {
   color: white;
   min-width: 384px;
+  max-height: none;
+  min-height: none;
   padding: 0;
   margin: 0;
   font-family: "Times New Roman", Times, serif;
 }
 
-main, #welcome {
+main, #welcome, footer {
   display: grid;
   min-width: 384px;
   justify-content: center;
   align-content: center;
-  color: black;
+  color: #222021;
   background-color: #fcee25;
+  margin-top: 10px;
 }
-main > .specials, #welcome > .specials {
+main > .specials, #welcome > .specials, footer > .specials {
   display: grid;
   text-align: center;
 }
-main > .specials > p, #welcome > .specials > p {
+main > .specials > p, #welcome > .specials > p, footer > .specials > p {
   font-size: 20px;
 }
-main > .specials > .num, #welcome > .specials > .num {
+main > .specials > .rules, #welcome > .specials > .rules, footer > .specials > .rules {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-top: -10px;
+}
+main > .specials > .num, #welcome > .specials > .num, footer > .specials > .num {
   font-size: 20px;
   font-weight: bold;
+}
+main > .specials > #bacon, #welcome > .specials > #bacon, footer > .specials > #bacon {
+  height: 10vh;
+  margin-left: 30%;
 }
 
 #welcome {
   display: grid;
   margin-top: 10px;
+}
+
+#map {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+  width: 385px;
 }/*# sourceMappingURL=style.css.map */

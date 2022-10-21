@@ -1,5 +1,6 @@
 @import "variables";
 
+
 header{
     display: grid;
     flex-flow: column;
@@ -35,7 +36,7 @@ header{
         text-align: center;
         margin: 5px 3px 0px 3px;
         color: $fcol;
-        background-color: black;
+        background-color: $bgcol;
         display: inline-flex;
     }
 }

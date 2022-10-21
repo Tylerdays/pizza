@@ -3,33 +3,52 @@
 @import "variables";
 
 html{
-    color: white;
+    color: $fcol;
     min-width: 384px;
+    max-height: none;
+    min-height: none;
     padding: 0;
     margin: 0;
     font-family:'Times New Roman', Times, serif;
+
 }
-main, #welcome{
+main, #welcome, footer{
     display: grid;
     min-width: 384px;
     justify-content: center;
     align-content: center;
-    color: black;
+    color: $bgcol;
     background-color: $tcol;
+    margin-top: 10px;
     >.specials{
         display: grid;
         text-align: center;
         >p{
             font-size: 20px;
         }
+        >.rules{
+            font-size: 15px;
+            font-weight: bolder;
+            margin-top: -10px;
+        }
         >.num{
             font-size: 20px;
             font-weight: bold;
             }
+        >#bacon{
+            height: 10vh;
+            margin-left: 30%;
+        }
     }
 }
 #welcome{
         display: grid;
         margin-top: 10px;
 }
-
+#map{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    width: 385px;
+}

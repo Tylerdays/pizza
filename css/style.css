@@ -7,40 +7,45 @@ header {
   grid-template-columns: 1fr 1fr;
   font-size: 2rem;
   color: #fcee25;
+  min-width: 384px;
 }
 header > #logo {
-  height: 7rem;
+  height: 10vh;
   align-self: start;
   justify-self: start;
 }
 header > #socials > img {
-  padding-bottom: 3px;
+  display: grid;
+  padding: 5px 25px;
   height: 3vh;
 }
 
 #topbar {
-  border: 2px solid black;
+  height: 4vh;
+  min-width: 384px;
   background-color: #fcee25;
-  margin-bottom: 0.3rem;
+  margin: 3px 0px 3px 0px;
 }
 #topbar > button {
+  height: 3vh;
+  font-size: 20px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px 3px 0px 3px;
   color: white;
   background-color: black;
   display: inline-flex;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 360px) {
   /* For Mobile */
   html {
-    max-width: 475px;
+    max-width: 384px;
     background-color: black;
   }
   html header {
     max-width: 85vw;
-  }
-  html main {
-    max-width: 80vw;
-    max-height: 100vw;
   }
 }
 @media only screen and (min-width: 750px) {
@@ -59,19 +64,34 @@ header > #socials > img {
 }
 html {
   color: white;
+  min-width: 384px;
   padding: 0;
   margin: 0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 main {
   display: grid;
-  max-width: 75vw;
+  min-width: 384px;
   justify-content: center;
   align-content: center;
   color: black;
   background-color: #fcee25;
 }
 main > .specials {
-  display: inline-block;
-  margin: 1fr 1fr 1fr 1fr;
+  display: grid;
+  text-align: center;
+}
+main > .specials > p {
+  font-size: 20px;
+}
+main > .specials > .num {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+> .welcome {
+  display: grid;
+  background-color: blue;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

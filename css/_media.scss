@@ -2,17 +2,16 @@
 @import "variables";
 
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 360px){
     /* For Mobile */
     html{
-    max-width: 475px;
+    max-width: 384px;
     background-color: black;
     header{
         max-width: 85vw;
     }
     main{
-        max-width: 80vw;
-        max-height: 100vw;
+   
     }
     }
 }

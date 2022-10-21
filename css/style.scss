@@ -4,20 +4,33 @@
 
 html{
     color: white;
+    min-width: 384px;
     padding: 0;
     margin: 0;
+    font-family:'Times New Roman', Times, serif;
 }
 main{
     display: grid;
-    max-width: 75vw;
+    min-width: 384px;
     justify-content: center;
     align-content: center;
     color: black;
-    background-color: #fcee25;
+    background-color: $tcol;
     >.specials{
-        display: inline-block;
-        margin: 1fr 1fr 1fr 1fr;
-        
+        display: grid;
+        text-align: center;
+        >p{
+            font-size: 20px;
+        }
+        >.num{
+            font-size: 20px;
+            font-weight: bold;
+            }
     }
+}
+    >.welcome{
+        display: grid;
+        background-color: blue;
+        margin-bottom: 10px;
 }
 

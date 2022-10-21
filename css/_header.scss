@@ -9,22 +9,31 @@ header{
     grid-template-columns: 1fr 1fr;
     font-size: 2rem;
     color: $tcol;
+    min-width: 384px;
             >#logo{
-            height: 7rem;
+            height: 10vh;
             align-self: start;
             justify-self: start;
             }
             >#socials>img{
-            padding-bottom: 3px;
+            display: grid;
+            padding:  5px 25px;
             height: 3vh;
             }
 }
     
 #topbar{
-    border: 2px solid black;
+    height: 4vh;
+    min-width: 384px;
     background-color: $tcol;
-    margin-bottom: .3rem;
+    margin: 3px 0px 3px 0px;
     >button{
+        height: 3vh;
+        font-size: 20px;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin: 5px 3px 0px 3px;
         color: $fcol;
         background-color: black;
         display: inline-flex;

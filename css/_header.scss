@@ -16,15 +16,15 @@ header{
             align-self: start;
             justify-self: start;
             }
-            >#socials>img{
-            display: grid;
-            padding:  5px 25px;
-            height: 3vh;
-            }
 }
-    
+#sociallink{
+    display: grid;
+    padding:  5px 25px;
+    height: 3vh;
+
+}
 #topbar{
-    height: 4vh;
+    height: 5%;
     min-width: 384px;
     background-color: $tcol;
     margin: 3px 0px 3px 0px;
@@ -34,7 +34,7 @@ header{
         align-content: center;
         justify-content: center;
         text-align: center;
-        margin: 5px 3px 0px 3px;
+        margin: 5px 3px 5px 3px;
         color: $fcol;
         background-color: $bgcol;
         display: inline-flex;

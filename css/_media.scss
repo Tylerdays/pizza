@@ -1,29 +1,17 @@
 @use "header";
 @import "variables";
 
-@media only screen and (min-width: 100px){
-    html{
-    background-color: $bgcol;
-    }
-}
-
-@media only screen and (min-width: 360px){
     /* For Mobile */
     html{
-    max-width: 384px;
     background-color: $bgcol;
     header{
         max-width: 85vw;
     }
-    main{
-   
     }
-    }
-}
+
 @media only screen and (min-width: 750px){
     /* For tablet */
     html{
-        max-width: 750px;
         background-color: green;
     }
 }
@@ -31,7 +19,6 @@
 @media only screen and (min-width: 1000px){
     /* For Mobile for desktop */
     html{
-        max-width: 100%;
         background-color: pink;
     }
 }

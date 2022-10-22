@@ -4,7 +4,6 @@
 
 html{
     color: $fcol;
-    min-width: 384px;
     max-height: none;
     min-height: none;
     padding: 0;
@@ -51,4 +50,12 @@ main, #welcome, footer{
     align-content: center;
     margin-top: 10px;
     width: 385px;
+}
+
+#contactinfo{
+    display: grid;
+}
+#aboutus{
+    display: grid;
+    
 }

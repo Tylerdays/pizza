@@ -14,14 +14,15 @@ header > #logo {
   align-self: start;
   justify-self: start;
 }
-header > #socials > img {
+
+#sociallink {
   display: grid;
   padding: 5px 25px;
   height: 3vh;
 }
 
 #topbar {
-  height: 4vh;
+  height: 5%;
   min-width: 384px;
   background-color: #fcee25;
   margin: 3px 0px 3px 0px;
@@ -32,44 +33,34 @@ header > #socials > img {
   align-content: center;
   justify-content: center;
   text-align: center;
-  margin: 5px 3px 0px 3px;
+  margin: 5px 3px 5px 3px;
   color: white;
   background-color: #222021;
   display: inline-flex;
 }
 
-@media only screen and (min-width: 100px) {
-  html {
-    background-color: #222021;
-  }
+/* For Mobile */
+html {
+  background-color: #222021;
 }
-@media only screen and (min-width: 360px) {
-  /* For Mobile */
-  html {
-    max-width: 384px;
-    background-color: #222021;
-  }
-  html header {
-    max-width: 85vw;
-  }
+html header {
+  max-width: 85vw;
 }
+
 @media only screen and (min-width: 750px) {
   /* For tablet */
   html {
-    max-width: 750px;
     background-color: green;
   }
 }
 @media only screen and (min-width: 1000px) {
   /* For Mobile for desktop */
   html {
-    max-width: 100%;
     background-color: pink;
   }
 }
 html {
   color: white;
-  min-width: 384px;
   max-height: none;
   min-height: none;
   padding: 0;
@@ -118,4 +109,12 @@ main > .specials > #bacon, #welcome > .specials > #bacon, footer > .specials > #
   align-content: center;
   margin-top: 10px;
   width: 385px;
+}
+
+#contactinfo {
+  display: grid;
+}
+
+#aboutus {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */

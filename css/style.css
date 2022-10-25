@@ -6,8 +6,8 @@ header {
   background-color: #222021;
   grid-template-columns: 1fr 1fr;
   font-size: 2rem;
-  color: #fcee25;
-  min-width: 384px;
+  min-width: 400px;
+  color: #FCBC26;
 }
 header > #logo {
   height: 10vh;
@@ -24,7 +24,7 @@ header > #logo {
 #topbar {
   height: 5%;
   min-width: 384px;
-  background-color: #fcee25;
+  background-color: #FCBC26;
   margin: 3px 0px 3px 0px;
 }
 #topbar > button {
@@ -39,6 +39,15 @@ header > #logo {
   display: inline-flex;
 }
 
+.callus {
+  display: inline-flex;
+  border: 3px solid #222021;
+  font-size: 25px;
+  justify-content: end;
+  align-content: end;
+  color: #222021;
+}
+
 /* For Mobile */
 html {
   background-color: #222021;
@@ -47,10 +56,18 @@ html header {
   max-width: 85vw;
 }
 
+@media only screen and (max-width: 750px) {
+  .callus {
+    display: none;
+  }
+}
 @media only screen and (min-width: 750px) {
   /* For tablet */
   html {
     background-color: green;
+  }
+  #phone2 {
+    display: none;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -74,7 +91,7 @@ main, #welcome, footer {
   justify-content: center;
   align-content: center;
   color: #222021;
-  background-color: #fcee25;
+  background-color: #FCBC26;
   margin-top: 10px;
 }
 main > .specials, #welcome > .specials, footer > .specials {

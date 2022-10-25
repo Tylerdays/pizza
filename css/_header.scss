@@ -9,8 +9,8 @@ header{
     background-color: $bgcol;
     grid-template-columns: 1fr 1fr;
     font-size: 2rem;
+    min-width: 400px;
     color: $tcol;
-    min-width: 384px;
             >#logo{
             height: 10vh;
             align-self: start;
@@ -39,4 +39,12 @@ header{
         background-color: $bgcol;
         display: inline-flex;
     }
+}
+.callus{
+    display: inline-flex;
+    border: 3px solid $bgcol;
+    font-size: 25px;
+    justify-content: end;
+    align-content: end;
+    color: $bgcol;
 }

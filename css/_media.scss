@@ -8,7 +8,7 @@
         max-width: 85vw;
     }
     }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 749px){
     .callus{
         display: none;
     }
@@ -19,8 +19,28 @@
     html{
         background-color: green;
     }
+    header, #topbar, #map, .callus{
+        min-width: 750px;
+    }
+    
     .phone3{
         display: none;
+    }
+    .callus{
+        font-size: 20px;
+        margin-left: 33%;
+    }
+    #map{
+        min-width: 750px;
+    }
+    #pizzatube{
+        display: inline;
+        justify-self: center;
+        align-self: center;
+        min-width: 690px;
+        min-height: 390px;
+        margin-left: 3%;
+
     }
 }
 

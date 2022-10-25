@@ -61,7 +61,7 @@ main, #welcome, footer{
     justify-content: center;
     align-content: center;
     margin-top: 10px;
-    width: 385px;
+    max-width: 400px;
 }
 
 #contactinfo{
@@ -71,6 +71,7 @@ main, #welcome, footer{
     display: grid;
     
 }
+
 #phone3{
     display: grid;
     justify-items: center;
@@ -82,4 +83,10 @@ main, #welcome, footer{
     >#pizzas, #Drinks, #extras{
         display:inline-block;
     }
+}
+#pizzatube{
+    display: grid;
+    width: 400px;
+    height:225px;
+    margin-right: 40px;
 }

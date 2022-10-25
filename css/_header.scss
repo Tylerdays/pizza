@@ -6,11 +6,11 @@ header{
     flex-flow: column;
     align-items: center;
     justify-items: end;
-    background-color: $bgcol;
+    background-color: $tcol;
     grid-template-columns: 1fr 1fr;
     font-size: 2rem;
     min-width: 400px;
-    color: $tcol;
+    color: $fcol;
             >#logo{
             height: 10vh;
             align-self: start;
@@ -36,15 +36,23 @@ header{
         text-align: center;
         margin: 5px 3px 5px 3px;
         color: $fcol;
-        background-color: $bgcol;
+        background-color: $tcol;
         display: inline-flex;
     }
 }
 .callus{
-    display: inline-flex;
-    border: 3px solid $bgcol;
+    display: flex-end;
+    border: 3px solid $tcol;
     font-size: 25px;
-    justify-content: end;
-    align-content: end;
+    color: $fcol;
+    background-color: $tcol;
+    text-align: center;
+
+}
+.phone3{
+    display: grid;
+    font-size: 25px;
+    background-color: $tcol;
     color: $bgcol;
+    text-align: center;
 }

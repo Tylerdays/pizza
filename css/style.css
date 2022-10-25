@@ -7,7 +7,7 @@ header {
   grid-template-columns: 1fr 1fr;
   font-size: 2rem;
   min-width: 400px;
-  color: #FCBC26;
+  color: rgba(255, 255, 255, 0.658);
 }
 header > #logo {
   height: 10vh;
@@ -24,7 +24,7 @@ header > #logo {
 #topbar {
   height: 5%;
   min-width: 384px;
-  background-color: #FCBC26;
+  background-color: #222021;
   margin: 3px 0px 3px 0px;
 }
 #topbar > button {
@@ -34,23 +34,31 @@ header > #logo {
   justify-content: center;
   text-align: center;
   margin: 5px 3px 5px 3px;
-  color: white;
+  color: rgba(255, 255, 255, 0.658);
   background-color: #222021;
   display: inline-flex;
 }
 
 .callus {
-  display: inline-flex;
+  display: flex-end;
   border: 3px solid #222021;
   font-size: 25px;
-  justify-content: end;
-  align-content: end;
-  color: #222021;
+  color: rgba(255, 255, 255, 0.658);
+  background-color: #222021;
+  text-align: center;
+}
+
+.phone3 {
+  display: grid;
+  font-size: 25px;
+  background-color: #222021;
+  color: #FCBC26;
+  text-align: center;
 }
 
 /* For Mobile */
 html {
-  background-color: #222021;
+  background-color: #FCBC26;
 }
 html header {
   max-width: 85vw;
@@ -66,7 +74,7 @@ html header {
   html {
     background-color: green;
   }
-  #phone2 {
+  .phone3 {
     display: none;
   }
 }
@@ -77,12 +85,23 @@ html header {
   }
 }
 html {
-  color: white;
+  color: rgba(255, 255, 255, 0.658);
   max-height: none;
   min-height: none;
   padding: 0;
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+}
+html font-family:Verdana, html Geneva, html Tahoma, html sans-serif a:link {
+  color: #222021;
+}
+html a:visited {
+  color: plum;
+}
+html a:hover {
+  color: rgba(255, 255, 255, 0.658);
+}
+html a:active {
+  color: lightblue;
 }
 
 main, #welcome, footer {
@@ -90,8 +109,8 @@ main, #welcome, footer {
   min-width: 384px;
   justify-content: center;
   align-content: center;
-  color: #222021;
-  background-color: #FCBC26;
+  color: rgba(255, 255, 255, 0.658);
+  background-color: #222021;
   margin-top: 10px;
 }
 main > .specials, #welcome > .specials, footer > .specials {
@@ -134,4 +153,18 @@ main > .specials > #bacon, #welcome > .specials > #bacon, footer > .specials > #
 
 #aboutus {
   display: grid;
+}
+
+#phone3 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#menubar {
+  display: grid;
+  background-color: #222021;
+}
+#menubar > #pizzas, #menubar #Drinks, #menubar #extras {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

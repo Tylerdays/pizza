@@ -8,7 +8,19 @@ html{
     min-height: none;
     padding: 0;
     margin: 0;
-    font-family:'Times New Roman', Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    a:link{
+        color: $tcol;
+    }
+    a:visited{
+        color: plum;
+    }
+    a:hover{
+        color: $fcol
+    }
+    a:active{
+        color: lightblue;
+    }
 
 }
 main, #welcome, footer{
@@ -16,7 +28,7 @@ main, #welcome, footer{
     min-width: 384px;
     justify-content: center;
     align-content: center;
-    color: $bgcol;
+    color: $fcol;
     background-color: $tcol;
     margin-top: 10px;
     >.specials{
@@ -58,4 +70,16 @@ main, #welcome, footer{
 #aboutus{
     display: grid;
     
+}
+#phone3{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#menubar{
+    display: grid;
+    background-color: $tcol;
+    >#pizzas, #Drinks, #extras{
+        display:inline-block;
+    }
 }

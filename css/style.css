@@ -1,6 +1,6 @@
 header {
   display: grid;
-  flex-flow: column;
+  grid-template-columns: repeat 8, 1fr;
   align-items: center;
   justify-items: end;
   background-color: #222021;
@@ -52,7 +52,7 @@ header > #logo {
   display: grid;
   font-size: 25px;
   background-color: #222021;
-  color: #FCBC26;
+  color: rgba(255, 255, 255, 0.658);
   text-align: center;
 }
 
@@ -74,15 +74,13 @@ html header {
   html {
     background-color: green;
   }
-  header, #topbar, #map, .callus {
-    min-width: 750px;
-  }
   .phone3 {
     display: none;
   }
   .callus {
     font-size: 20px;
     margin-left: 33%;
+    justify-self: center;
   }
   #map {
     min-width: 750px;
@@ -94,6 +92,12 @@ html header {
     min-width: 690px;
     min-height: 390px;
     margin-left: 3%;
+  }
+  #menubar {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  #menubar > #drinks {
+    margin-left: 4rem;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -108,18 +112,20 @@ html {
   min-height: none;
   padding: 0;
   margin: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
-html font-family:Verdana, html Geneva, html Tahoma, html sans-serif a:link {
-  color: #222021;
+html a:link {
+  color: #FCBC26;
 }
 html a:visited {
   color: plum;
 }
 html a:hover {
-  color: rgba(255, 255, 255, 0.658);
+  color: #FCBC26;
 }
 html a:active {
-  color: lightblue;
+  color: rgb(77, 224, 51);
 }
 
 main, #welcome, footer {
@@ -185,6 +191,11 @@ main > .specials > #bacon, #welcome > .specials > #bacon, footer > .specials > #
 }
 #menubar > #pizzas, #menubar #Drinks, #menubar #extras {
   display: inline-block;
+}
+#menubar > #pizzas > div, #menubar #Drinks > div, #menubar #extras > div {
+  display: flex;
+  height: 100px;
+  width: 100px;
 }
 
 #pizzatube {

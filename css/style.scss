@@ -8,20 +8,20 @@ html{
     min-height: none;
     padding: 0;
     margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Tahoma, sans-serif;
+    scroll-behavior: smooth;
     a:link{
-        color: $tcol;
+        color: $bgcol;
     }
     a:visited{
         color: plum;
     }
     a:hover{
-        color: $fcol
+        color: $bgcol;
     }
     a:active{
-        color: lightblue;
+        color: rgb(77, 224, 51);
     }
-
 }
 main, #welcome, footer{
     display: grid;
@@ -82,6 +82,12 @@ main, #welcome, footer{
     background-color: $tcol;
     >#pizzas, #Drinks, #extras{
         display:inline-block;
+        >div{
+            display: flex;
+            height: 100px;
+            width: 100px;
+            
+        }
     }
 }
 #pizzatube{

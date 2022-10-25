@@ -19,9 +19,6 @@
     html{
         background-color: green;
     }
-    header, #topbar, #map, .callus{
-        min-width: 750px;
-    }
     
     .phone3{
         display: none;
@@ -29,6 +26,7 @@
     .callus{
         font-size: 20px;
         margin-left: 33%;
+        justify-self: center;
     }
     #map{
         min-width: 750px;
@@ -41,6 +39,12 @@
         min-height: 390px;
         margin-left: 3%;
 
+    }
+    #menubar{
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        >#drinks{
+            margin-left: 4rem;
+        }
     }
 }
 

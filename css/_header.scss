@@ -3,7 +3,7 @@
 
 header{
     display: grid;
-    flex-flow: column;
+    grid-template-columns: repeat (8, 1fr);
     align-items: center;
     justify-items: end;
     background-color: $tcol;
@@ -53,6 +53,6 @@ header{
     display: grid;
     font-size: 25px;
     background-color: $tcol;
-    color: $bgcol;
+    color: $fcol;
     text-align: center;
 }

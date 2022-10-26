@@ -23,7 +23,6 @@ header > #logo {
 
 #topbar {
   height: 5%;
-  min-width: 384px;
   background-color: #222021;
   margin: 3px 0px 3px 0px;
 }
@@ -37,6 +36,10 @@ header > #logo {
   color: rgba(255, 255, 255, 0.658);
   background-color: #222021;
   display: inline-flex;
+}
+#topbar > button > marker {
+  justify-self: end;
+  align-self: end;
 }
 
 .callus {
@@ -60,9 +63,6 @@ header > #logo {
 html {
   background-color: #FCBC26;
 }
-html header {
-  max-width: 85vw;
-}
 
 @media only screen and (max-width: 749px) {
   .callus {
@@ -83,7 +83,8 @@ html header {
     justify-self: center;
   }
   #map {
-    min-width: 750px;
+    display: block;
+    max-width: 1000px;
   }
   #pizzatube {
     display: inline;
@@ -119,7 +120,7 @@ html a:link {
   color: #FCBC26;
 }
 html a:visited {
-  color: plum;
+  color: rgb(185, 12, 12);
 }
 html a:hover {
   color: #FCBC26;
@@ -163,12 +164,13 @@ main > .specials > #bacon, #welcome > .specials > #bacon, footer > .specials > #
   margin-top: 10px;
 }
 
+#direction {
+  display: flex;
+}
+
 #map {
-  display: inline-flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 10px;
-  max-width: 400px;
+  height: 400px;
+  width: 400px;
 }
 
 #contactinfo {
@@ -185,17 +187,17 @@ main > .specials > #bacon, #welcome > .specials > #bacon, footer > .specials > #
   align-items: center;
 }
 
-#menubar {
+#test {
   display: grid;
-  background-color: #222021;
 }
-#menubar > #pizzas, #menubar #Drinks, #menubar #extras {
-  display: inline-block;
-}
-#menubar > #pizzas > div, #menubar #Drinks > div, #menubar #extras > div {
-  display: flex;
-  height: 100px;
-  width: 100px;
+
+.menubar {
+  display: table;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-collapse: collapse;
+  grid-template-columns: 25px 5px 25px 5px;
+  height: 100%;
+  width: 70%;
 }
 
 #pizzatube {

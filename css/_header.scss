@@ -25,7 +25,6 @@ header{
 }
 #topbar{
     height: 5%;
-    min-width: 384px;
     background-color: $tcol;
     margin: 3px 0px 3px 0px;
     >button{
@@ -38,6 +37,11 @@ header{
         color: $fcol;
         background-color: $tcol;
         display: inline-flex;
+        >marker{
+            
+            justify-self: end;
+            align-self: end;
+        }
     }
 }
 .callus{

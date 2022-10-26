@@ -14,7 +14,7 @@ html{
         color: $bgcol;
     }
     a:visited{
-        color: plum;
+        color: rgb(185, 12, 12);
     }
     a:hover{
         color: $bgcol;
@@ -56,12 +56,12 @@ main, #welcome, footer{
         display: grid;
         margin-top: 10px;
 }
+#direction{
+    display: flex;
+}
 #map{
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 10px;
-    max-width: 400px;
+    height: 400px;
+    width: 400px;
 }
 
 #contactinfo{
@@ -77,19 +77,18 @@ main, #welcome, footer{
     justify-items: center;
     align-items: center;
 }
-#menubar{
+#test{
     display: grid;
-    background-color: $tcol;
-    >#pizzas, #Drinks, #extras{
-        display:inline-block;
-        >div{
-            display: flex;
-            height: 100px;
-            width: 100px;
-            
-        }
-    }
 }
+.menubar{
+    display: table;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    border-collapse: collapse;
+    grid-template-columns: 25px 5px 25px 5px;
+    height: 100%;
+    width: 70%;
+        
+    }
 #pizzatube{
     display: grid;
     width: 400px;

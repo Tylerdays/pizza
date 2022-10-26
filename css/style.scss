@@ -82,13 +82,15 @@ main, #welcome, footer{
 }
 .menubar{
     display: table;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    background-color: $tcol;
     border-collapse: collapse;
-    grid-template-columns: 25px 5px 25px 5px;
-    height: 100%;
-    width: 70%;
-        
+    width: 100%;
     }
+th{
+    color: $fcol;
+    padding: 5px 5px 5px 5px;
+}
+       
 #pizzatube{
     display: grid;
     width: 400px;

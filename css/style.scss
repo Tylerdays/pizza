@@ -91,6 +91,7 @@ html{
     .foodimage{
         margin-top: 1em;
         height: 100px;
+        width: 100px;
         flex-shrink: 0;
         object-fit: cover;
     }
@@ -116,13 +117,10 @@ html{
     }
     .itemline{
         display: flex;
-        justify-content: space-between;
         margin-right: 1em;
         margin-top: 1em;
         font-size: $fsmob
     }
-    .itemdiv{
-        
-    }
+ 
 }
 

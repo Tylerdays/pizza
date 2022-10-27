@@ -43,9 +43,8 @@
     .menugrid{
             grid-template-columns: repeat(2, 1fr);
     }
-.itemline{
-    margin-right: 5em;
-    font-size: 100px;
+.itemdiv{
+    margin-right: 1em;
 }
 }
 
@@ -55,8 +54,8 @@
         background-color: pink;
         font-size: 18px
     }
-    .menugrid{
-        grid-template-columns: repeat(3, 1fr);
+
+.itemdiv{
+    margin-right: 2em;
 }
-    
 }

@@ -96,9 +96,8 @@ html {
   .menugrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .itemline {
-    margin-right: 5em;
-    font-size: 100px;
+  .itemdiv {
+    margin-right: 1em;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -107,8 +106,8 @@ html {
     background-color: pink;
     font-size: 18px;
   }
-  .menugrid {
-    grid-template-columns: repeat(3, 1fr);
+  .itemdiv {
+    margin-right: 2em;
   }
 }
 html {
@@ -210,6 +209,7 @@ html a:active {
 .menugrid .foodimage {
   margin-top: 1em;
   height: 100px;
+  width: 100px;
   flex-shrink: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -235,7 +235,6 @@ html a:active {
 }
 .menugrid .itemline {
   display: flex;
-  justify-content: space-between;
   margin-right: 1em;
   margin-top: 1em;
   font-size: font-size 14px;

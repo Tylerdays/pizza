@@ -3,12 +3,8 @@
 @import "variables";
 
 html{
-    color: $fcol;
-    max-height: none;
-    min-height: none;
-    padding: 0;
     margin: 0;
-    font-family:Verdana, Tahoma, sans-serif;
+    padding: 0;
     scroll-behavior: smooth;
     a:link{
         color: $bgcol;
@@ -23,30 +19,23 @@ html{
         color: rgb(77, 224, 51);
     }
 }
-main, #welcome, footer{
+#mains, #welcome, footer{
     display: grid;
-    min-width: 384px;
-    justify-content: center;
-    align-content: center;
     color: $fcol;
     background-color: $tcol;
     margin-top: 10px;
-    >.specials{
+    .specials{
         display: grid;
         text-align: center;
-        >p{
-            font-size: 20px;
+        p{
+            font-size: $fsmob;
         }
-        >.rules{
-            font-size: 15px;
+        .rules{
+            font-size: 12px;
             font-weight: bolder;
             margin-top: -10px;
         }
-        >.num{
-            font-size: 20px;
-            font-weight: bold;
-            }
-        >#bacon{
+        #bacon{
             height: 10vh;
             margin-left: 30%;
         }
@@ -80,20 +69,60 @@ main, #welcome, footer{
 #test{
     display: grid;
 }
-.menubar{
-    display: table;
-    background-color: $tcol;
-    border-collapse: collapse;
-    width: 100%;
-    }
-th{
-    color: $fcol;
-    padding: 5px 5px 5px 5px;
-}
-       
 #pizzatube{
     display: grid;
     width: 400px;
     height:225px;
     margin-right: 40px;
 }
+.menucontainer{
+    font-size: $fsmob;
+}
+.menuhead{
+    padding-bottom: 1em;
+    border-bottom: 1px dashed $fcol;
+}
+.menugrid{
+    display: grid;
+    background-color: $bgcol;
+    gap: 1em;
+    padding: 1em 0;
+    margin-left: 10px;
+    .foodimage{
+        margin-top: 1em;
+        height: 100px;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+    .menuitems{
+        display: flex;
+    }
+    .foodtitle{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        border-bottom: solid black;
+        margin-left: 1em;
+
+    }
+    p{
+        margin-left: 1em;
+        margin-top: -1em;
+        border-bottom: solid black;
+    }
+    .itemabout{
+        flex-grow: 1;
+    }
+    .itemprice{
+        margin-right: 1em;
+    }
+    .itemline{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1em;
+        margin-top: 1em;
+        font-size: $fsmob
+    }
+    .itemdiv{
+        
+    }
+}
+

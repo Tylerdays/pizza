@@ -1,12 +1,10 @@
 header {
   display: grid;
-  grid-template-columns: repeat 8, 1fr;
+  font-size: font-size 14px;
   align-items: center;
   justify-items: end;
   background-color: #222021;
   grid-template-columns: 1fr 1fr;
-  font-size: 2rem;
-  min-width: 400px;
   color: rgba(255, 255, 255, 0.658);
 }
 header > #logo {
@@ -28,7 +26,7 @@ header > #logo {
 }
 #topbar > button {
   height: 3vh;
-  font-size: 20px;
+  font-size: font-size 14px;
   align-content: center;
   justify-content: center;
   text-align: center;
@@ -61,6 +59,7 @@ header > #logo {
 
 /* For Mobile */
 html {
+  font-size: 14px;
   background-color: #FCBC26;
 }
 
@@ -73,6 +72,7 @@ html {
   /* For tablet */
   html {
     background-color: green;
+    font-size: 16px;
   }
   .phone3 {
     display: none;
@@ -83,8 +83,7 @@ html {
     justify-self: center;
   }
   #map {
-    display: block;
-    max-width: 1000px;
+    width: 1000px;
   }
   #pizzatube {
     display: inline;
@@ -94,26 +93,27 @@ html {
     min-height: 390px;
     margin-left: 3%;
   }
-  #menubar {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .menugrid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  #menubar > #drinks {
-    margin-left: 4rem;
+  .itemline {
+    margin-right: 5em;
+    font-size: 100px;
   }
 }
 @media only screen and (min-width: 1000px) {
   /* For Mobile for desktop */
   html {
     background-color: pink;
+    font-size: 18px;
+  }
+  .menugrid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 html {
-  color: rgba(255, 255, 255, 0.658);
-  max-height: none;
-  min-height: none;
-  padding: 0;
   margin: 0;
-  font-family: Verdana, Tahoma, sans-serif;
+  padding: 0;
   scroll-behavior: smooth;
 }
 html a:link {
@@ -129,32 +129,25 @@ html a:active {
   color: rgb(77, 224, 51);
 }
 
-main, #welcome, footer {
+#mains, #welcome, footer {
   display: grid;
-  min-width: 384px;
-  justify-content: center;
-  align-content: center;
   color: rgba(255, 255, 255, 0.658);
   background-color: #222021;
   margin-top: 10px;
 }
-main > .specials, #welcome > .specials, footer > .specials {
+#mains .specials, #welcome .specials, footer .specials {
   display: grid;
   text-align: center;
 }
-main > .specials > p, #welcome > .specials > p, footer > .specials > p {
-  font-size: 20px;
+#mains .specials p, #welcome .specials p, footer .specials p {
+  font-size: font-size 14px;
 }
-main > .specials > .rules, #welcome > .specials > .rules, footer > .specials > .rules {
-  font-size: 15px;
+#mains .specials .rules, #welcome .specials .rules, footer .specials .rules {
+  font-size: 12px;
   font-weight: bolder;
   margin-top: -10px;
 }
-main > .specials > .num, #welcome > .specials > .num, footer > .specials > .num {
-  font-size: 20px;
-  font-weight: bold;
-}
-main > .specials > #bacon, #welcome > .specials > #bacon, footer > .specials > #bacon {
+#mains .specials #bacon, #welcome .specials #bacon, footer .specials #bacon {
   height: 10vh;
   margin-left: 30%;
 }
@@ -191,21 +184,59 @@ main > .specials > #bacon, #welcome > .specials > #bacon, footer > .specials > #
   display: grid;
 }
 
-.menubar {
-  display: table;
-  background-color: #222021;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th {
-  color: rgba(255, 255, 255, 0.658);
-  padding: 5px 5px 5px 5px;
-}
-
 #pizzatube {
   display: grid;
   width: 400px;
   height: 225px;
   margin-right: 40px;
+}
+
+.menucontainer {
+  font-size: font-size 14px;
+}
+
+.menuhead {
+  padding-bottom: 1em;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.658);
+}
+
+.menugrid {
+  display: grid;
+  background-color: #FCBC26;
+  gap: 1em;
+  padding: 1em 0;
+  margin-left: 10px;
+}
+.menugrid .foodimage {
+  margin-top: 1em;
+  height: 100px;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menugrid .menuitems {
+  display: flex;
+}
+.menugrid .foodtitle {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-bottom: solid black;
+  margin-left: 1em;
+}
+.menugrid p {
+  margin-left: 1em;
+  margin-top: -1em;
+  border-bottom: solid black;
+}
+.menugrid .itemabout {
+  flex-grow: 1;
+}
+.menugrid .itemprice {
+  margin-right: 1em;
+}
+.menugrid .itemline {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1em;
+  margin-top: 1em;
+  font-size: font-size 14px;
 }/*# sourceMappingURL=style.css.map */

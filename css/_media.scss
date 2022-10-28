@@ -17,14 +17,14 @@
     /* For tablet */
     html{
         background-color: $bgcol;
-        font-size: 16px;
+        font-size: $fstab;
     }
     
     .phone3{
         display: none;
     }
     .callus{
-        font-size: 20px;
+        font-size: $fstab;
         margin-left: 33%;
         justify-self: center;
     }
@@ -46,6 +46,7 @@
 .itemdiv{
     margin-right: 1em;
 }
+
 }
 
 @media only screen and (min-width: 1000px){
@@ -54,6 +55,9 @@
         
         font-size: 18px
     }
+    .menugrid{
+        grid-template-columns: repeat(3, 1fr);
+}
 
 .itemdiv{
     margin-right: 2em;

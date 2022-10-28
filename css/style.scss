@@ -90,10 +90,7 @@ html{
     height:225px;
     margin-right: 40px;
 }
-.menu{
-    margin: 1em;
-    padding-right: 1em;
-}
+
 .menucontainer{
     font-size: $fsmob;
     background-color: $bgcol;
@@ -102,18 +99,15 @@ html{
 .menuhead{
     background-color: $bgcol;
     padding-bottom: 1em;
-    border-bottom: 1px dashed $fcol;
+    
 }
 .menugrid{
     display: inline-grid;
     background-color: $tcol;
     color: $fcol;
-    margin: 1em;
     gap: 1em;
     padding: 1em 0;
-    margin-left: 10px;
     .foodimage{
-
         margin: 1em;
         height: 100px;
         width: 100px;
@@ -122,7 +116,7 @@ html{
     }
     .menuitems{
         display: flex;
-        margin: 1em;
+
     }
     .foodtitle{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -158,4 +152,16 @@ html{
     color: $bgcol;
     background-color: $tcol;
     
+}
+.snackbar{
+    display: inline-flex;
+    margin: 1em 1em -1.5em 1em;
+}
+.snackimg{
+    height: 1.5em;
+}
+.snacklink{
+    display: block;
+    margin: .5em;
+    margin-left: 2em;
 }

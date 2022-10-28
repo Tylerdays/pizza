@@ -28,7 +28,7 @@
         justify-self: center;
     }
     #map{
-        width: 1000px;
+        width: 100px;
     }
     #pizzatube{
         display: inline;
@@ -44,6 +44,16 @@
             margin-right: 4em;
             grid-template-columns: repeat(2, 1fr);
     }
+    header{
+        width: 99.75%;
+        margin-left: 2em;
+ 
+    }
+    #topbar{
+        width: 100%;
+        margin-left: 2em;
+        
+    }
 
 }
 }
@@ -56,5 +66,11 @@
 
 .itemdiv{
     margin-right: 2em;
+}
+header{
+    max-width: 90%;
+}
+#topbar{
+    max-width: 90.25%
 }
 }

@@ -17,9 +17,8 @@
     /* For tablet */
     html{
         background-color: $bgcol;
-        font-size: $fstab;
-    }
-    
+
+
     .phone3{
         display: none;
     }
@@ -41,20 +40,16 @@
 
     }
     .menugrid{
+            display: inline-grid;
+            margin-right: 4em;
             grid-template-columns: repeat(2, 1fr);
     }
-.itemdiv{
-    margin-right: 1em;
-}
 
+}
 }
 
 @media only screen and (min-width: 1000px){
     /* For Mobile for desktop */
-    html{
-        
-        font-size: 18px
-    }
     .menugrid{
         grid-template-columns: repeat(3, 1fr);
 }

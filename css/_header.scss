@@ -22,23 +22,22 @@ header{
 
 }
 #topbar{
+    display: flex;
     height: 5%;
     background-color: $tcol;
-    margin: 3px 0px 3px 0px;
-    >button{
+    margin: 3px;
+    justify-content: space-between;
+
+    .buttonbar{
         height: 3vh;
         font-size: $fsmob;
         align-content: center;
         justify-content: center;
         text-align: center;
-        margin: 5px 3px 5px 3px;
+        margin: 5px 3px;
         color: $fcol;
         background-color: $tcol;
         display: inline-flex;
-        >marker{
-            justify-self: end;
-            align-self: end;
-        }
     }
 }
 .callus{
@@ -48,6 +47,7 @@ header{
     color: $fcol;
     background-color: $tcol;
     text-align: center;
+    margin: .5em;
 
 }
 .phone3{

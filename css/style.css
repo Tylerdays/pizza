@@ -1,6 +1,6 @@
 header {
   display: grid;
-  font-size: font-size 14px;
+  font-size: 18px;
   align-items: center;
   justify-items: end;
   background-color: #222021;
@@ -20,24 +20,22 @@ header > #logo {
 }
 
 #topbar {
+  display: flex;
   height: 5%;
   background-color: #222021;
-  margin: 3px 0px 3px 0px;
+  margin: 3px;
+  justify-content: space-between;
 }
-#topbar > button {
+#topbar .buttonbar {
   height: 3vh;
-  font-size: font-size 14px;
+  font-size: 18px;
   align-content: center;
   justify-content: center;
   text-align: center;
-  margin: 5px 3px 5px 3px;
+  margin: 5px 3px;
   color: rgba(255, 255, 255, 0.658);
   background-color: #222021;
   display: inline-flex;
-}
-#topbar > button > marker {
-  justify-self: end;
-  align-self: end;
 }
 
 .callus {
@@ -47,6 +45,7 @@ header > #logo {
   color: rgba(255, 255, 255, 0.658);
   background-color: #222021;
   text-align: center;
+  margin: 0.5em;
 }
 
 .phone3 {
@@ -59,7 +58,6 @@ header > #logo {
 
 /* For Mobile */
 html {
-  font-size: 14px;
   background-color: #FCBC26;
 }
 
@@ -71,7 +69,7 @@ html {
 @media only screen and (min-width: 750px) {
   /* For tablet */
   html {
-    background-color: green;
+    background-color: #FCBC26;
     font-size: 16px;
   }
   .phone3 {
@@ -103,7 +101,6 @@ html {
 @media only screen and (min-width: 1000px) {
   /* For Mobile for desktop */
   html {
-    background-color: pink;
     font-size: 18px;
   }
   .itemdiv {
@@ -128,41 +125,55 @@ html a:active {
   color: rgb(77, 224, 51);
 }
 
-#mains, #welcome, footer {
+#mains, #welcomehead, footer {
   display: grid;
+  justify-content: center;
+  text-justify: center;
   color: rgba(255, 255, 255, 0.658);
+  font-family: sans-serif;
+  font-size: 18px;
   background-color: #222021;
-  margin-top: 10px;
+  grid-template-columns: 2fr;
+  margin-top: 1em;
 }
-#mains .specials, #welcome .specials, footer .specials {
+#mains .specials, #welcomehead .specials, footer .specials {
   display: grid;
+  font-family: sans-serif;
+  justify-content: center;
+}
+#mains .specials .two4, #welcomehead .specials .two4, footer .specials .two4 {
   text-align: center;
 }
-#mains .specials p, #welcome .specials p, footer .specials p {
-  font-size: font-size 14px;
-}
-#mains .specials .rules, #welcome .specials .rules, footer .specials .rules {
-  font-size: 12px;
+#mains .specials .rules, #welcomehead .specials .rules, footer .specials .rules {
+  font-size: 0.75em;
   font-weight: bolder;
-  margin-top: -10px;
+  margin-top: -0.5em;
 }
-#mains .specials #bacon, #welcome .specials #bacon, footer .specials #bacon {
-  height: 10vh;
-  margin-left: 30%;
+
+#bacon {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin-left: 5em;
 }
 
 #welcome {
   display: grid;
-  margin-top: 10px;
+  margin-top: 1em;
 }
 
 #direction {
   display: flex;
 }
 
-#map {
-  height: 400px;
+.mapdiv {
+  display: grid;
+  margin-left: -1em;
+}
+.mapdiv iframe {
   width: 400px;
+  height: 400px;
+  margin: 1em;
 }
 
 #contactinfo {
@@ -191,17 +202,21 @@ html a:active {
 }
 
 .menucontainer {
-  font-size: font-size 14px;
+  font-size: 18px;
+  background-color: #FCBC26;
 }
 
 .menuhead {
+  background-color: #FCBC26;
   padding-bottom: 1em;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.658);
 }
 
 .menugrid {
   display: grid;
-  background-color: #FCBC26;
+  background-color: #222021;
+  color: rgba(255, 255, 255, 0.658);
+  margin: 1em;
   gap: 1em;
   padding: 1em 0;
   margin-left: 10px;
@@ -237,5 +252,5 @@ html a:active {
   display: flex;
   margin-right: 1em;
   margin-top: 1em;
-  font-size: font-size 14px;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

@@ -2,8 +2,8 @@
 
     /* For Mobile */
     html{
-    font-size: 14px;
     background-color: $bgcol;
+    
     }
 
 @media only screen and (max-width: 749px){
@@ -16,7 +16,7 @@
 @media only screen and (min-width: 750px){
     /* For tablet */
     html{
-        background-color: green;
+        background-color: $bgcol;
         font-size: 16px;
     }
     
@@ -51,7 +51,7 @@
 @media only screen and (min-width: 1000px){
     /* For Mobile for desktop */
     html{
-        background-color: pink;
+        
         font-size: 18px
     }
 

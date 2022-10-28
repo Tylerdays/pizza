@@ -19,40 +19,54 @@ html{
         color: rgb(77, 224, 51);
     }
 }
-#mains, #welcome, footer{
+#mains, #welcomehead, footer{
     display: grid;
+    justify-content: center;
+    text-justify: center;
     color: $fcol;
+    font-family: $ffam;
+    font-size: $fsmob;
     background-color: $tcol;
-    margin-top: 10px;
+    grid-template-columns: 2fr;
+    margin-top: 1em;
     .specials{
         display: grid;
-        text-align: center;
-        p{
-            font-size: $fsmob;
-        }
+        font-family: $ffam;
+        justify-content: center;
+        .two4{
+            text-align: center;
+        } 
         .rules{
-            font-size: 12px;
+            font-size: .75em;
             font-weight: bolder;
-            margin-top: -10px;
-        }
-        #bacon{
-            height: 10vh;
-            margin-left: 30%;
+            margin-top: -.5em;  
         }
     }
 }
+#bacon{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin-left: 5em;
+}
 #welcome{
         display: grid;
-        margin-top: 10px;
+        margin-top: 1em;
 }
 #direction{
     display: flex;
 }
-#map{
-    height: 400px;
-    width: 400px;
-}
 
+
+.mapdiv{
+    display: grid;
+    margin-left: -1em;
+    iframe{
+        width:400px;
+        height: 400px;
+        margin: 1em;
+    }
+}
 #contactinfo{
     display: grid;
 }
@@ -77,14 +91,19 @@ html{
 }
 .menucontainer{
     font-size: $fsmob;
+    background-color: $bgcol;
+    
 }
 .menuhead{
+    background-color: $bgcol;
     padding-bottom: 1em;
     border-bottom: 1px dashed $fcol;
 }
 .menugrid{
     display: grid;
-    background-color: $bgcol;
+    background-color: $tcol;
+    color: $fcol;
+    margin: 1em;
     gap: 1em;
     padding: 1em 0;
     margin-left: 10px;

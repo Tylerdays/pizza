@@ -222,6 +222,11 @@ html a:active {
   margin-right: 40px;
 }
 
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
 .menucontainer {
   font-size: 18px;
   background-color: #FCBC26;
@@ -237,6 +242,7 @@ html a:active {
   background-color: #222021;
   color: rgba(255, 255, 255, 0.658);
   gap: 1em;
+  margin-bottom: 1em;
   padding: 1em 0;
 }
 .menugrid .foodimage {
@@ -294,7 +300,14 @@ html a:active {
 }
 
 .snacklink {
-  display: block;
   margin: 0.5em;
-  margin-left: 2em;
+}
+
+.choicegrid {
+  margin: 0;
+  padding: 0;
+}
+
+.menutitle {
+  text-align: start;
 }/*# sourceMappingURL=style.css.map */

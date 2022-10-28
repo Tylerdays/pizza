@@ -90,7 +90,10 @@ html{
     height:225px;
     margin-right: 40px;
 }
-
+.menu{
+    margin: 0;
+    padding: 0;
+}
 .menucontainer{
     font-size: $fsmob;
     background-color: $bgcol;
@@ -106,6 +109,7 @@ html{
     background-color: $tcol;
     color: $fcol;
     gap: 1em;
+    margin-bottom: 1em;
     padding: 1em 0;
     .foodimage{
         margin: 1em;
@@ -161,7 +165,14 @@ html{
     height: 1.5em;
 }
 .snacklink{
-    display: block;
     margin: .5em;
-    margin-left: 2em;
+
+}
+.choicegrid{
+    margin: 0;
+    padding: 0;
+}
+.menutitle{
+    text-align: start
+    
 }

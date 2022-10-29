@@ -18,14 +18,13 @@
 
 @media only screen and (min-width: 750px){
     /* For tablet */
-    .phone3{
+    .phoneus{
         display: none;
     }
 
     .callus{
         font-size: $fstab;
-        margin-left: 33%;
-        justify-self: center;
+        
     }
     .mapdiv{
         display: grid;
@@ -37,7 +36,8 @@
     }
     .menugrid{
             display: inline-grid;
-            margin-right: 4em;
+            margin: 0;
+            padding: 0;
             grid-template-columns: repeat(2, 1fr);
     }
     header{
@@ -48,8 +48,18 @@
     }
     #topbar{
         width: 96%;
-        margin-left: 1em;
+        margin-right: 5vw;
         
+    }
+    .itemabout{
+        display: grid;
+    }
+    .menuitems>img{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        height: 200px;
+        width: 100px;
+        margin: 0;
+        margin-left: 1em;
     }
 
 }
@@ -63,5 +73,4 @@
 .itemdiv{
     margin-right: 2em;
 }
-
 }

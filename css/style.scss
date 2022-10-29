@@ -31,6 +31,7 @@ html{
     font-size: $fsmob;
     background-color: $tcol;
     grid-template-columns: 2fr;
+    box-shadow:  4px 5px $tcol;
     p{
         padding: .5em;
         font-family: $ffam;
@@ -40,6 +41,7 @@ html{
         display: grid;
         font-family: $ffam;
         justify-content: center;
+        box-shadow:  4px 10px $tcol;
         .two4{
             text-align: center;
         } 
@@ -80,6 +82,7 @@ html{
     iframe{
         width: 90vw;
         height: 400px;
+        box-shadow:  4px 5px $tcol;
 
         margin: 1em;
     }
@@ -113,8 +116,16 @@ html{
     padding: 0;
     }
     .menucontainer{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     font-size: $fsmob;
     background-color: $bgcol;
+    width: 90vw;
+    margin-right: 10vw;
+    p{
+        padding: 1em;
+        margin: -1em 1em;
+        margin-top: -1.5em;
+    }
     }
     .menuhead{
     background-color: $bgcol;
@@ -130,8 +141,8 @@ html{
     }
     .foodimage{
     margin: 1em;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     flex-shrink: 0;
     object-fit: cover;
     }
@@ -143,6 +154,12 @@ html{
     border-bottom: solid black;
     padding-bottom: .5em;
     margin-left: 1em;
+    .foodname{
+        border-bottom: solid $fcol 3px;
+        padding-bottom: .25em;
+        margin-left: 1em;
+        
+    }
     p{
     margin-left: 1em;
     border-bottom: solid black;
@@ -201,10 +218,37 @@ html{
         background-color: $tcol;
         color: $fcol;
         font-size: $fsmob;
-        p{
+        margin-bottom: 1em;
+        h2{
+            padding: 1em;
+        }
+        p, h2{
             text-align: center;
         }
+        .day, .holiday{
+            text-decoration: underline 2px white;
+        }
     }
+}
+.contactgrid{
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+.contactdiv{
+    display: grid;
+    background-color: $tcol;
+    color: $fcol;
+    text-align: start;
+    font-size: $fsmob;
+    padding: 1em;
+
+}
+.campdiv{
+    display: grid;
+}
+.campimg{
+    height: 100px;
 }
         
     

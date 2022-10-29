@@ -4,61 +4,62 @@ html{
     margin: 0;
     padding: 0;
 }
-
+/* */
 .headergrid{
     display: inline;
 }
-        .headerdiv{
-            display: flex;
-            justify-content: center;
-            width: 100vw;
+    .headerdiv{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
         }
-                header{
-                    display: grid;
-                    font-size: $fsmob;
-                    align-items: center;
-                    justify-items: end;
-                    background-color: $tcol;
-                    margin: -1em, -em, -1em, -1em;
-                    grid-template-columns: 1fr 1fr;
-                    color: $fcol;
-                }
-                        #logo{
-                            height: 10vh;
-                            align-self: start;
-                            justify-self: start;
-                        }
-
-.topgrid{
-        display: inline;
-            .topdiv{
-                display: inline;
-                justify-content: center;
-                background-color: $tcol;
-                margin: .5em;
-                width: 90%;
-                    .topbar{
-                        grid-template-columns: 200px 1fr max-content;
-                        background-color: $tcol;
-                        margin: .5em 0;
-                        justify-content: space-between;
-                            .buttonbar{
-                                font-size: $fsmob;
-                                align-content: center;
-                                justify-content: center;
-                                text-align: center;
-                                margin: .25em;
-                                padding: .25em;
-                                color: $fcol;
-                                background-color: $tcol;
-                                    .buttonlink{
-                                        margin: 0;
-                                        padding: 0;
+        header{
+            display: grid;
+            font-size: $fsmob;
+            align-items: center;
+            justify-items: end;
+            background-color: $tcol;
+            margin: -1em, -em, -1em, -1em;
+            grid-template-columns: 1fr 1fr;
+            color: $fcol;
+            #logo{
+                height: 10vh;
+                align-self: start;
+                justify-self: start;
                 }
             }
-        }
+
+.topgrid{
+    display: inline;
     }
-}
+    .topdiv{
+        display: inline;
+        justify-content: center;
+        background-color: $tcol;
+        margin: .5em;
+        width: 90%;
+    }
+    .topbar{
+        grid-template-columns: 200px 1fr max-content;
+        background-color: $tcol;
+        margin: .5em 0;
+        justify-content: space-between;
+    }
+    .buttonbar{
+        font-size: $fsmob;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin: .25em;
+        padding: .25em;
+        color: $fcol;
+        background-color: $tcol;
+    }
+    .buttonlink{
+        margin: 0;
+        padding: 0;
+    }
+
 .callus{
     display: grid;
     position: absolute;
@@ -76,10 +77,26 @@ html{
     padding:  5px 25px;
     height: 3vh;  
 }
-.phone3{
-    display: grid;
+.phoneus{
+    display: block;
     font-size: 25px;
     background-color: $tcol;
     color: $fcol;
     text-align: center;
+    margin-top: -1.5em;
+    p{
+        padding: .5em;
+}    
+}
+
+.footdiv{
+    margin: 0;
+    padding: 0;
+    font-family: $ffam;
+    font-size: $fsmob;
+    p{
+        padding: -.25em;
+        margin: -.25em;
+    }
+    
 }

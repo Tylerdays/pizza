@@ -3,6 +3,7 @@ html {
   padding: 0;
 }
 
+/* */
 .headergrid {
   display: inline;
 }
@@ -23,8 +24,7 @@ header {
   grid-template-columns: 1fr 1fr;
   color: rgba(255, 255, 255, 0.658);
 }
-
-#logo {
+header #logo {
   height: 10vh;
   align-self: start;
   justify-self: start;
@@ -33,21 +33,24 @@ header {
 .topgrid {
   display: inline;
 }
-.topgrid .topdiv {
+
+.topdiv {
   display: inline;
   justify-content: center;
   background-color: #222021;
   margin: 0.5em;
   width: 90%;
 }
-.topgrid .topdiv .topbar {
+
+.topbar {
   grid-template-columns: 200px 1fr -webkit-max-content;
   grid-template-columns: 200px 1fr max-content;
   background-color: #222021;
   margin: 0.5em 0;
   justify-content: space-between;
 }
-.topgrid .topdiv .topbar .buttonbar {
+
+.buttonbar {
   font-size: 18px;
   align-content: center;
   justify-content: center;
@@ -57,7 +60,8 @@ header {
   color: rgba(255, 255, 255, 0.658);
   background-color: #222021;
 }
-.topgrid .topdiv .topbar .buttonbar .buttonlink {
+
+.buttonlink {
   margin: 0;
   padding: 0;
 }
@@ -80,12 +84,27 @@ header {
   height: 3vh;
 }
 
-.phone3 {
-  display: grid;
+.phoneus {
+  display: block;
   font-size: 25px;
   background-color: #222021;
   color: rgba(255, 255, 255, 0.658);
   text-align: center;
+  margin-top: -1.5em;
+}
+.phoneus p {
+  padding: 0.5em;
+}
+
+.footdiv {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.footdiv p {
+  padding: -0.25em;
+  margin: -0.25em;
 }
 
 /* For Mobile */
@@ -172,6 +191,11 @@ html a:active {
   background-color: #222021;
   grid-template-columns: 2fr;
 }
+#mains p, #welcomehead p, footer p {
+  padding: 0.5em;
+  font-family: sans-serif;
+  font-size: 18px;
+}
 #mains .specials, #welcomehead .specials, footer .specials {
   display: grid;
   font-family: sans-serif;
@@ -181,8 +205,8 @@ html a:active {
   text-align: center;
 }
 #mains .specials .rules, #welcomehead .specials .rules, footer .specials .rules {
-  font-size: 0.75em;
-  font-weight: bolder;
+  font-size: 16px;
+  font-family: sans-serif;
   margin-top: -0.5em;
 }
 
@@ -198,9 +222,13 @@ html a:active {
   width: 200px;
 }
 
-#welcome {
+.welcome {
   display: grid;
   margin-top: 1em;
+}
+.welcome h2, .welcome p {
+  margin: 0.5em;
+  padding: 0.5em;
 }
 
 #direction {
@@ -226,14 +254,10 @@ html a:active {
   display: grid;
 }
 
-#phone3 {
+#phoneus {
   display: grid;
   justify-items: center;
   align-items: center;
-}
-
-#test {
-  display: grid;
 }
 
 .pizzaflex {
@@ -270,7 +294,8 @@ html a:active {
   margin-bottom: 1em;
   padding: 1em 0;
 }
-.menugrid .foodimage {
+
+.foodimage {
   margin: 1em;
   height: 100px;
   width: 100px;
@@ -278,31 +303,36 @@ html a:active {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.menugrid .menuitems {
+
+.menuitems {
   display: flex;
 }
-.menugrid .foodtitle {
+
+.foodtitle {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   border-bottom: solid black;
   padding-bottom: 0.5em;
   margin-left: 1em;
 }
-.menugrid p {
+.foodtitle p {
   margin-left: 1em;
   border-bottom: solid black;
   margin-top: -0.5em;
   padding-bottom: 0.5em;
 }
-.menugrid .itemabout {
+
+.itemabout {
   flex-grow: 1;
 }
-.menugrid .itemprice {
+
+.itemprice {
   margin-right: 1em;
 }
-.menugrid .itemprice div {
+.itemprice div {
   margin: 1em 0;
 }
-.menugrid .itemline {
+
+.itemline {
   display: flex;
   margin-right: 1em;
   margin-top: 1em;
@@ -335,4 +365,21 @@ html a:active {
 
 .menutitle {
   text-align: start;
+}
+
+.condiv {
+  display: grid;
+  background-color: #222021;
+}
+
+.hours {
+  display: grid;
+}
+.hours .hoursinfo {
+  background-color: #222021;
+  color: rgba(255, 255, 255, 0.658);
+  font-size: 18px;
+}
+.hours .hoursinfo p {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

@@ -31,6 +31,11 @@ html{
     font-size: $fsmob;
     background-color: $tcol;
     grid-template-columns: 2fr;
+    p{
+        padding: .5em;
+        font-family: $ffam;
+        font-size: $fsmob;
+    }
     .specials{
         display: grid;
         font-family: $ffam;
@@ -39,8 +44,8 @@ html{
             text-align: center;
         } 
         .rules{
-            font-size: .75em;
-            font-weight: bolder;
+            font-size: 16px;
+            font-family: $ffam;
             margin-top: -.5em;  
         }
     }
@@ -56,9 +61,13 @@ html{
     width: 200px;
     
 }
-#welcome{
+.welcome{
         display: grid;
         margin-top: 1em;
+        h2, p{
+            margin: .5em;
+            padding: .5em;
+        }
 }
 #direction{
     display: flex;
@@ -74,7 +83,7 @@ html{
 
         margin: 1em;
     }
-}
+    }
 #contactinfo{
     display: grid;
     margin: 1em
@@ -84,14 +93,12 @@ html{
     
 }
 
-#phone3{
+#phoneus{
     display: grid;
     justify-items: center;
     align-items: center;
 }
-#test{
-    display: grid;
-}
+
 .pizzaflex{
     display: inline-flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -104,56 +111,53 @@ html{
 .menu{
     margin: 0;
     padding: 0;
-}
-.menucontainer{
+    }
+    .menucontainer{
     font-size: $fsmob;
     background-color: $bgcol;
-    
-}
-.menuhead{
+    }
+    .menuhead{
     background-color: $bgcol;
     padding-bottom: 1em;
-    
-}
-.menugrid{
+    }
+    .menugrid{
     display: inline-grid;
     background-color: $tcol;
     color: $fcol;
     gap: 1em;
     margin-bottom: 1em;
     padding: 1em 0;
+    }
     .foodimage{
-        margin: 1em;
-        height: 100px;
-        width: 100px;
-        flex-shrink: 0;
-        object-fit: cover;
+    margin: 1em;
+    height: 100px;
+    width: 100px;
+    flex-shrink: 0;
+    object-fit: cover;
     }
     .menuitems{
-        display: flex;
-
+    display: flex;
     }
     .foodtitle{
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        border-bottom: solid black;
-        padding-bottom: .5em;
-        margin-left: 1em;
-
-    }
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    border-bottom: solid black;
+    padding-bottom: .5em;
+    margin-left: 1em;
     p{
-        margin-left: 1em;
-        border-bottom: solid black;
-        margin-top: -.5em;
-        padding-bottom: .5em;
+    margin-left: 1em;
+    border-bottom: solid black;
+    margin-top: -.5em;
+    padding-bottom: .5em;
+    }
     }
     .itemabout{
         flex-grow: 1;
     }
     .itemprice{
-        margin-right: 1em;
-        div{
-            margin: 1em 0;
-        }
+    margin-right: 1em;
+    div{
+        margin: 1em 0;
+    }
     }
     .itemline{
         display: flex;
@@ -161,7 +165,6 @@ html{
         margin-top: 1em;
         font-size: $fsmob
     }
-}
 .contactpage, .history, .aboutus{
     font-size: $fsmob;
     color: $bgcol;
@@ -187,3 +190,21 @@ html{
     text-align: start
     
 }
+.condiv{
+    display: grid;
+    background-color: $tcol;
+}
+
+.hours{
+    display: grid;
+    .hoursinfo{
+        background-color: $tcol;
+        color: $fcol;
+        font-size: $fsmob;
+        p{
+            text-align: center;
+        }
+    }
+}
+        
+    

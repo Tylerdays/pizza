@@ -15,10 +15,6 @@
 
 @media only screen and (min-width: 750px){
     /* For tablet */
-    html{
-        background-color: $bgcol;
-
-
     .phone3{
         display: none;
     }
@@ -27,17 +23,13 @@
         margin-left: 33%;
         justify-self: center;
     }
-    #map{
-        width: 100px;
-    }
-    #pizzatube{
-        display: inline;
-        justify-self: center;
-        align-self: center;
-        min-width: 690px;
-        min-height: 390px;
-        margin-left: 3%;
-
+    .mapdiv{
+        display: grid;
+        margin: -1em 1em 0 1em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        #map{
+            width: 90vw;
+        }
     }
     .menugrid{
             display: inline-grid;
@@ -45,17 +37,16 @@
             grid-template-columns: repeat(2, 1fr);
     }
     header{
-        width: 99.75%;
-        margin-left: 2em;
+        width: 95.75%;
+        margin-left: 1em;
  
     }
     #topbar{
-        width: 100%;
-        margin-left: 2em;
+        width: 96%;
+        margin-left: 1em;
         
     }
 
-}
 }
 
 @media only screen and (min-width: 1000px){

@@ -49,7 +49,7 @@ html{
     display: flex;
     justify-content: center;
     width: 200px;
-    margin-left: 5em;
+    margin-left: 20%;
 }
 #welcome{
         display: grid;
@@ -62,14 +62,17 @@ html{
 
 .mapdiv{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     iframe{
-        width:350px;
+        width: 90vw;
         height: 400px;
+
         margin: 1em;
     }
 }
 #contactinfo{
     display: grid;
+    margin: 1em
 }
 #aboutus{
     display: grid;
@@ -84,11 +87,14 @@ html{
 #test{
     display: grid;
 }
-#pizzatube{
-    display: grid;
-    width: 400px;
-    height:225px;
-    margin-right: 40px;
+.pizzaflex{
+    display: inline-flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.pizzatube{
+    width: 90vw;
+    height: 50.78vw;
+    margin: 1em
 }
 .menu{
     margin: 0;

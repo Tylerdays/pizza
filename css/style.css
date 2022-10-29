@@ -3,56 +3,81 @@ html {
   padding: 0;
 }
 
+.headergrid {
+  display: inline;
+}
+
+.headerdiv {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
 header {
   display: grid;
   font-size: 18px;
   align-items: center;
   justify-items: end;
   background-color: #222021;
+  margin: -1em, -em, -1em, -1em;
   grid-template-columns: 1fr 1fr;
   color: rgba(255, 255, 255, 0.658);
 }
-header > #logo {
+
+#logo {
   height: 10vh;
   align-self: start;
   justify-self: start;
+}
+
+.topgrid {
+  display: inline;
+}
+.topgrid .topdiv {
+  display: inline;
+  justify-content: center;
+  background-color: #222021;
+  margin: 0.5em;
+  width: 90%;
+}
+.topgrid .topdiv .topbar {
+  grid-template-columns: 200px 1fr -webkit-max-content;
+  grid-template-columns: 200px 1fr max-content;
+  background-color: #222021;
+  margin: 0.5em 0;
+  justify-content: space-between;
+}
+.topgrid .topdiv .topbar .buttonbar {
+  font-size: 18px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0.25em;
+  padding: 0.25em;
+  color: rgba(255, 255, 255, 0.658);
+  background-color: #222021;
+}
+.topgrid .topdiv .topbar .buttonbar .buttonlink {
+  margin: 0;
+  padding: 0;
+}
+
+.callus {
+  display: grid;
+  position: absolute;
+  right: 15px;
+  display: inline;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.658);
+  background-color: #222021;
+  text-align: center;
+  margin: 0.5em;
 }
 
 #sociallink {
   display: grid;
   padding: 5px 25px;
   height: 3vh;
-}
-
-#topbar {
-  display: flex;
-  grid-template-columns: 200px 1fr -webkit-max-content;
-  grid-template-columns: 200px 1fr max-content;
-  height: 5%;
-  background-color: #222021;
-  margin: 0.5em 0;
-  justify-content: space-between;
-}
-#topbar .buttonbar {
-  height: 3vh;
-  font-size: 18px;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  margin: 5px 3px;
-  color: rgba(255, 255, 255, 0.658);
-  background-color: #222021;
-  display: inline-flex;
-}
-
-.callus {
-  display: flex-end;
-  border: 3px solid #222021;
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.658);
-  background-color: #222021;
-  text-align: center;
-  margin: 0.5em;
 }
 
 .phone3 {
@@ -98,7 +123,8 @@ html {
   }
   header {
     width: 95.75%;
-    margin-left: 1em;
+    margin-left: -1em;
+    margin-bottom: -1em;
   }
   #topbar {
     width: 96%;
@@ -112,12 +138,6 @@ html {
   }
   .itemdiv {
     margin-right: 2em;
-  }
-  header {
-    max-width: 90%;
-  }
-  #topbar {
-    max-width: 90.25%;
   }
 }
 html {

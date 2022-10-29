@@ -34,28 +34,36 @@
 <title>Monia Pizza</title>
 </head>
 <body>
-    <header>
-        <img  id="logo" src="media/Moonslogo.png" alt="logo">
-        
-        <nav id="socials">
-        <a href="https://facebook.com"><img id="sociallink"  src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="facebook logo"></a>
-        <a href="https://twitter.com"><img id="sociallink"  src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="twitter logo"></a>
-        </nav>
-    </header>
+
+<Div class="header  ">
+    <div class="headerdiv" >
+        <header class="logodiv">
+            <img  id="logo" src="media/Moonslogo.png" alt="logo">
+                <nav id="socials">
+                    <a href="https://facebook.com"><img id="sociallink"  src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="facebook logo"></a>
+                    <a href="https://twitter.com"><img id="sociallink"  src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="twitter logo"></a>
+                </nav>
+        </header>
+    </div>
+</div>
 
     
-        <nav id="topbar">
-        <span>
-            <button class="buttonbar"><a href="menu.html">Menu</a></button>
-            <button class="buttonbar"><a href="#map">Location</a></button>
-            <button class="buttonbar"><a href="contacts.html">Contact us</a></button>
-        </span>
-        <div class="callus">Call us: 780-999-9999</div>
+<div class="topgrid">
+    <div class="topdiv">
+        <nav class="topbar">
+            <span class="topspan">
+                <button class="buttonbar"><a class="buttonlink" href="menu.html">Menu</a></button>
+                <button class="buttonbar"><a class="buttonlink" href="contacts.html">Contact us</a></button>
+                <button class="buttonbar"><a class="buttonlink" href="#map">Location</a></button>
+            </span>
+                <div class="callus">Call us: 780-999-9999</div>
         </nav>
+    </div>
+</div>
         <!--I have had to switch callus and phone3 between class and id to many time to count before 
         figuring out to switch the semantic tags-->
         
-    
+    <!--class is phone3 because it's the third trial that worked-->
         <section class="phone3">
             <p>
                 Call us at
@@ -65,7 +73,7 @@
                 To place your order!
             </p>
         </section>
-
+<!--Tags are as followed, specials div is for the image in specials, two4 is for the two for one deal, bacondiv is for the bacon pizza image-->
     <main id="mains">
         <div class="specials">
             <div class="specialsimg"></div>
@@ -76,22 +84,20 @@
             <p>Try the new Bacon Lover Delux Pizza just $20.00 for a 15" large!</p>
         </div>
     </main>
-    
-    
-    <section id="welcomehead">
-        <div class="welcome">
-            <h2>Welcome to Monia Pizza</h2>
-            <p>
+<section id="welcomehead">
+    <div class="welcome">
+        <h2>Welcome to Monia Pizza</h2>
+             <p>
                 A bit about us:
                 We were founded by one George Derikson in 1988, the founding location of
                 Monia was in a small shop located right by Georges colledge campus at NAIT in Edmonton.
                 The business started off with just a few of Georges classmates but soon was thriving as word spread and soon Monia Pizza had become the center of
                 Georges life as his passion for food exploded. George in an effort to give back has founded multiple scholarships to those seeking to furter their education.
             </p>
-            <img src="" alt="">
+                <div class="welcomeimg"><img src="" alt=""></div>
             <p></p>
-        </div>
-    </section>
+    </div>
+</section>
     
     <!--surprisingly easy to get done, thought it would be harder-->
     <section id="direction">

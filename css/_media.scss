@@ -10,6 +10,9 @@
     .callus{
         display: none;
     }
+    
+    
+    
 }
 
 
@@ -18,6 +21,7 @@
     .phone3{
         display: none;
     }
+
     .callus{
         font-size: $fstab;
         margin-left: 33%;
@@ -38,7 +42,8 @@
     }
     header{
         width: 95.75%;
-        margin-left: 1em;
+        margin-left: -1em;
+        margin-bottom: -1em;
  
     }
     #topbar{
@@ -58,10 +63,5 @@
 .itemdiv{
     margin-right: 2em;
 }
-header{
-    max-width: 90%;
-}
-#topbar{
-    max-width: 90.25%
-}
+
 }

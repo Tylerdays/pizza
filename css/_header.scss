@@ -11,15 +11,17 @@ html{
     .headerdiv{
         display: flex;
         justify-content: center;
-        width: 100vw;
+        width: 90vw;
         }
         header{
             display: grid;
             font-size: $fsmob;
             align-items: center;
+            position: relative;
+            left: 5vw;
+            right: 5vw;
             justify-items: end;
             background-color: $tcol;
-            margin: -1em, -em, -1em, -1em;
             grid-template-columns: 1fr 1fr;
             color: $fcol;
             box-shadow:  4px 5px $tcol;
@@ -100,11 +102,14 @@ html{
 .footdiv{
     margin: 0;
     padding: 0;
+    position: 80vw;
+    left: 10vw;
+    right: 10vw;
     font-family: $ffam;
     font-size: $fsmob;
     p{
         padding: -.25em;
-        margin: -.25em;
+     
     }
     
 }

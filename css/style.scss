@@ -55,13 +55,14 @@ html{
 .bacondiv{
     display: grid;
     justify-content: center;
+    box-shadow:  4px 10px $tcol;
 }
 .bacon{
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     width: 200px;
-    
+    box-shadow:  4px 10px $tcol;
 }
 .welcome{
         display: grid;
@@ -80,10 +81,9 @@ html{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     iframe{
-        width: 90vw;
+        width: 95vw;
         height: 400px;
         box-shadow:  4px 5px $tcol;
-
         margin: 1em;
     }
     }
@@ -102,92 +102,85 @@ html{
     align-items: center;
 }
 
-.pizzaflex{
-    display: inline-flex;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.pizzatube{
-    width: 90vw;
-    height: 50.78vw;
-    margin: 1em
-}
+
 .menu{
     margin: 0;
     padding: 0;
     }
-    .menucontainer{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    font-size: $fsmob;
-    background-color: $bgcol;
-    width: 90vw;
-    margin-right: 10vw;
-    p{
-        padding: 1em;
+.menucontainer{
+font-size: $fsmob;
+background-color: $bgcol;
+width: 90vw;
+position: relative;
+left: 5vw;
+right: 5vw;
+margin-right: 10vw;
+}
+.iteminfo{
+ padding: 1em;
         margin: -1em 1em;
         margin-top: -1.5em;
     }
-    }
-    .menuhead{
-    background-color: $bgcol;
-    padding-bottom: 1em;
-    }
-    .menugrid{
-    display: inline-grid;
-    background-color: $tcol;
-    color: $fcol;
-    gap: 1em;
-    margin-bottom: 1em;
-    padding: 1em 0;
-    }
-    .foodimage{
-    margin: 1em;
-    height: 75px;
-    width: 75px;
-    flex-shrink: 0;
-    object-fit: cover;
-    }
-    .menuitems{
-    display: flex;
-    }
-    .foodtitle{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    border-bottom: solid black;
-    padding-bottom: .5em;
-    margin-left: 1em;
+.menuhead{
+background-color: $bgcol;
+padding-bottom: 1em;
+}
+.menugrid{
+display: inline-grid;
+background-color: $tcol;
+color: $fcol;
+gap: 1em;
+margin-bottom: 1em;
+padding: 1em 0;
+box-shadow:  4px 10px $tcol;
+}
+.foodimage{
+margin: 1em;
+height: 75px;
+width: 75px;
+flex-shrink: 0;
+object-fit: cover;
+}
+.menuitems{
+display: flex;
+}
+.foodtitle{
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+border-bottom: solid black;
+padding-bottom: .5em;
+margin-left: 1em;
     .foodname{
-        border-bottom: solid $fcol 3px;
-        padding-bottom: .25em;
-        margin-left: 1em;
-        
-    }
-    p{
+    border-bottom: solid $fcol 3px;
+    padding-bottom: .25em;
     margin-left: 1em;
-    border-bottom: solid black;
-    margin-top: -.5em;
-    padding-bottom: .5em;
+        p{
+        margin-left: 1em;
+        border-bottom: solid black;
+        margin-top: -.5em;
+        padding-bottom: .5em;
+        }
+        }
+        }
+.itemabout{
+    flex-grow: 1;
     }
-    }
-    .itemabout{
-        flex-grow: 1;
-    }
-    .itemprice{
+.itemprice{
     margin-right: 1em;
-    div{
-        margin: 1em 0;
-    }
-    }
-    .itemline{
-        display: flex;
-        margin-right: 1em;
-        margin-top: 1em;
-        font-size: $fsmob
+        div{
+            margin: 1em 0;
+            }
+        }
+.itemline{
+    display: flex;
+    margin-right: 1em;
+    margin-top: 1em;
+    font-size: $fsmob
     }
 .contactpage, .history, .aboutus{
     font-size: $fsmob;
     color: $bgcol;
     background-color: $tcol;
-    
-}
+    }
 .snackbar{
     display: inline-flex;
     margin: 1em 1em -1.5em 1em;
@@ -196,7 +189,7 @@ html{
     height: 1.5em;
 }
 .snacklink{
-    margin: .5em;
+  
 
 }
 .choicegrid{
@@ -207,48 +200,100 @@ html{
     text-align: start
     
 }
+/* End Of menu */
+/*Star of Contacts*/
 .condiv{
     display: grid;
     background-color: $tcol;
 }
-
 .hours{
     display: grid;
-    .hoursinfo{
-        background-color: $tcol;
-        color: $fcol;
-        font-size: $fsmob;
-        margin-bottom: 1em;
-        h2{
-            padding: 1em;
-        }
-        p, h2{
+        .hoursinfo{
+            box-shadow:  4px 10px $tcol;
+            background-color: $tcol;
+            color: $fcol;
+            position: relative;
+            left: 30vw;
+            right: 10vw;
+            width: 40vw;
+            font-size: $fsmob;
+            margin-bottom: 1em;
             text-align: center;
+                .day, .holiday{
+                    font-size: 25px;
+                }
+            }
         }
-        .day, .holiday{
-            text-decoration: underline 2px white;
-        }
+.hourshead{
+    padding: 1em;                   
     }
-}
+        
+
 .contactgrid{
     display: grid;
     margin: 0;
     padding: 0;
 }
-.contactdiv{
+.contactdiv, .historyinfo{
     display: grid;
     background-color: $tcol;
     color: $fcol;
     text-align: start;
     font-size: $fsmob;
     padding: 1em;
-
+    margin: 1em;
+    box-shadow:  4px 10px $tcol;
+}
+.infoheadclass{
+    text-align: center;
 }
 .campdiv{
     display: grid;
+    justify-content: center;
 }
 .campimg{
-    height: 100px;
+        display: flex;
+        width: 300px;
+        }
+.hiddengrid{
+    display: grid;
 }
-        
-    
+.hiddendiv{
+    background-image: url(https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.hiddendiv2{
+    background-image: url(https://images.pexels.com/photos/1449775/pexels-photo-1449775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.hiddendiv, .hiddendiv2{
+    display: none;
+    width: 90vw;
+    height:65vh;
+    box-shadow:  5px 5px $tcol;
+    margin-right: -.5em;
+}
+.consgrid{
+    display: grid;
+}
+.consdiv{
+    display: grid;
+    text-align: center;
+    background-color: $tcol;
+    font-family: $ffam;
+    font-size: $fsmob;
+    justify-content: center;
+    color: $fcol;
+}
+.pizzaflex{
+    display: inline-flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.pizzatube{
+    width: 90vw;
+    /* I know the height is set to width, I did it by accident 
+    but keeping it this way allows for you to put the video 
+    on near any size without borders or img squish
+     */
+    height: 50.78vw;
+    margin: 1em;
+    box-shadow:  5px 5px $tcol;
+}

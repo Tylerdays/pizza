@@ -11,16 +11,18 @@ html {
 .headerdiv {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 90vw;
 }
 
 header {
   display: grid;
   font-size: 18px;
   align-items: center;
+  position: relative;
+  left: 5vw;
+  right: 5vw;
   justify-items: end;
   background-color: #222021;
-  margin: -1em, -em, -1em, -1em;
   grid-template-columns: 1fr 1fr;
   color: rgba(255, 255, 255, 0.658);
   box-shadow: 4px 5px #222021;
@@ -103,12 +105,14 @@ header #logo {
 .footdiv {
   margin: 0;
   padding: 0;
+  position: 80vw;
+  left: 10vw;
+  right: 10vw;
   font-family: sans-serif;
   font-size: 18px;
 }
 .footdiv p {
   padding: -0.25em;
-  margin: -0.25em;
 }
 
 /* For Mobile */
@@ -129,13 +133,8 @@ html {
   .callus {
     font-size: 20px;
   }
-  .mapdiv {
+  .hiddengrid > .hiddendiv {
     display: grid;
-    margin: -1em 1em 0 1em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-  .mapdiv #map {
-    width: 90vw;
   }
   .menugrid {
     display: inline-grid;
@@ -165,11 +164,15 @@ html {
 }
 @media only screen and (min-width: 1000px) {
   /* For Mobile for desktop */
+  .menucontainer {
+    position: relative;
+    left: 10vw;
+  }
   .menugrid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .itemdiv {
-    margin-right: 2em;
+  .hiddengrid > .hiddendiv2 {
+    display: grid;
   }
 }
 html {
@@ -228,6 +231,7 @@ html a:active {
 .bacondiv {
   display: grid;
   justify-content: center;
+  box-shadow: 4px 10px #222021;
 }
 
 .bacon {
@@ -235,6 +239,7 @@ html a:active {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: center;
   width: 200px;
+  box-shadow: 4px 10px #222021;
 }
 
 .welcome {
@@ -255,7 +260,7 @@ html a:active {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .mapdiv iframe {
-  width: 90vw;
+  width: 95vw;
   height: 400px;
   box-shadow: 4px 5px #222021;
   margin: 1em;
@@ -276,30 +281,22 @@ html a:active {
   align-items: center;
 }
 
-.pizzaflex {
-  display: inline-flex;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.pizzatube {
-  width: 90vw;
-  height: 50.78vw;
-  margin: 1em;
-}
-
 .menu {
   margin: 0;
   padding: 0;
 }
 
 .menucontainer {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   font-size: 18px;
   background-color: #FCBC26;
   width: 90vw;
+  position: relative;
+  left: 5vw;
+  right: 5vw;
   margin-right: 10vw;
 }
-.menucontainer p {
+
+.iteminfo {
   padding: 1em;
   margin: -1em 1em;
   margin-top: -1.5em;
@@ -317,6 +314,7 @@ html a:active {
   gap: 1em;
   margin-bottom: 1em;
   padding: 1em 0;
+  box-shadow: 4px 10px #222021;
 }
 
 .foodimage {
@@ -343,7 +341,7 @@ html a:active {
   padding-bottom: 0.25em;
   margin-left: 1em;
 }
-.foodtitle p {
+.foodtitle .foodname p {
   margin-left: 1em;
   border-bottom: solid black;
   margin-top: -0.5em;
@@ -383,10 +381,6 @@ html a:active {
   height: 1.5em;
 }
 
-.snacklink {
-  margin: 0.5em;
-}
-
 .choicegrid {
   margin: 0;
   padding: 0;
@@ -396,6 +390,8 @@ html a:active {
   text-align: start;
 }
 
+/* End Of menu */
+/*Star of Contacts*/
 .condiv {
   display: grid;
   background-color: #222021;
@@ -405,20 +401,23 @@ html a:active {
   display: grid;
 }
 .hours .hoursinfo {
+  box-shadow: 4px 10px #222021;
   background-color: #222021;
   color: rgba(255, 255, 255, 0.658);
+  position: relative;
+  left: 30vw;
+  right: 10vw;
+  width: 40vw;
   font-size: 18px;
   margin-bottom: 1em;
-}
-.hours .hoursinfo h2 {
-  padding: 1em;
-}
-.hours .hoursinfo p, .hours .hoursinfo h2 {
   text-align: center;
 }
 .hours .hoursinfo .day, .hours .hoursinfo .holiday {
-  -webkit-text-decoration: underline 2px white;
-          text-decoration: underline 2px white;
+  font-size: 25px;
+}
+
+.hourshead {
+  padding: 1em;
 }
 
 .contactgrid {
@@ -427,19 +426,77 @@ html a:active {
   padding: 0;
 }
 
-.contactdiv {
+.contactdiv, .historyinfo {
   display: grid;
   background-color: #222021;
   color: rgba(255, 255, 255, 0.658);
   text-align: start;
   font-size: 18px;
   padding: 1em;
+  margin: 1em;
+  box-shadow: 4px 10px #222021;
+}
+
+.infoheadclass {
+  text-align: center;
 }
 
 .campdiv {
   display: grid;
+  justify-content: center;
 }
 
 .campimg {
-  height: 100px;
+  display: flex;
+  width: 300px;
+}
+
+.hiddengrid {
+  display: grid;
+}
+
+.hiddendiv {
+  background-image: url(https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.hiddendiv2 {
+  background-image: url(https://images.pexels.com/photos/1449775/pexels-photo-1449775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.hiddendiv, .hiddendiv2 {
+  display: none;
+  width: 90vw;
+  height: 65vh;
+  box-shadow: 5px 5px #222021;
+  margin-right: -0.5em;
+}
+
+.consgrid {
+  display: grid;
+}
+
+.consdiv {
+  display: grid;
+  text-align: center;
+  background-color: #222021;
+  font-family: sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.658);
+}
+
+.pizzaflex {
+  display: inline-flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pizzatube {
+  width: 90vw;
+  /* I know the height is set to width, I did it by accident 
+  but keeping it this way allows for you to put the video 
+  on near any size without borders or img squish
+   */
+  height: 50.78vw;
+  margin: 1em;
+  box-shadow: 5px 5px #222021;
 }/*# sourceMappingURL=style.css.map */

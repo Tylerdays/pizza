@@ -3,7 +3,7 @@ html {
   padding: 0;
 }
 
-/* */
+/*Header and it's similar classes are for the header top bar*/
 .headergrid {
   display: inline;
 }
@@ -33,6 +33,8 @@ header #logo {
   justify-self: start;
 }
 
+/*Topgrid is the class for the navigation bar to 
+different areas of the site*/
 .topgrid {
   display: inline;
 }
@@ -54,6 +56,8 @@ header #logo {
   justify-content: space-between;
 }
 
+/*Button bar and button link are the classes for the buttons in
+the top bar menu*/
 .buttonbar {
   font-size: 18px;
   align-content: center;
@@ -70,6 +74,7 @@ header #logo {
   padding: 0;
 }
 
+/*Cal us class is for the phone number atatched to the topbar*/
 .callus {
   display: grid;
   position: absolute;
@@ -83,12 +88,14 @@ header #logo {
   box-shadow: 4px 5px #222021;
 }
 
+/*for the social imgs and icons in the header*/
 #sociallink {
   display: grid;
   padding: 5px 25px;
   height: 3vh;
 }
 
+/*styling for the mobile only phone div*/
 .phoneus {
   display: block;
   font-size: 25px;
@@ -102,6 +109,7 @@ header #logo {
   padding: 0.5em;
 }
 
+/*styling for the footer*/
 .footdiv {
   margin: 0;
   padding: 0;
@@ -113,6 +121,7 @@ header #logo {
 }
 .footdiv p {
   padding: -0.25em;
+  margin: -0.25em;
 }
 
 /* For Mobile */
@@ -171,6 +180,9 @@ html {
   .menugrid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .itemdiv {
+    margin-right: 2em;
+  }
   .hiddengrid > .hiddendiv2 {
     display: grid;
   }
@@ -193,6 +205,8 @@ html a:active {
   color: rgb(77, 224, 51);
 }
 
+/* mains, and welcome are the containers for the specials and the 
+    short welcome blurb in the index.html */
 #mains, #welcomehead {
   margin: 1em;
 }
@@ -218,6 +232,8 @@ html a:active {
   font-family: sans-serif;
   justify-content: center;
   box-shadow: 4px 10px #222021;
+  /* div for the featured offer */
+  /* Rules is the smaller font under two4 declaring rules of the offer */
 }
 #mains .specials .two4, #welcomehead .specials .two4, footer .specials .two4 {
   text-align: center;
@@ -228,6 +244,16 @@ html a:active {
   margin-top: -0.5em;
 }
 
+.welcome {
+  display: grid;
+  margin-top: 1em;
+}
+.welcome h2, .welcome p {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+/* Bacon div and Bacon are used for the img of bacon pizza in index */
 .bacondiv {
   display: grid;
   justify-content: center;
@@ -242,19 +268,12 @@ html a:active {
   box-shadow: 4px 10px #222021;
 }
 
-.welcome {
-  display: grid;
-  margin-top: 1em;
-}
-.welcome h2, .welcome p {
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
+/*Direction and map are for the google maps embed */
 #direction {
   display: flex;
 }
 
+/*For the google maps iframe inserts*/
 .mapdiv {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -275,12 +294,15 @@ html a:active {
   display: grid;
 }
 
+/*Id for on mobile only call grid*/
 #phoneus {
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
+/* Any and all menu, item and food labled options are linked to the
+menu.html and the menu grid and */
 .menu {
   margin: 0;
   padding: 0;
@@ -348,6 +370,10 @@ html a:active {
   padding-bottom: 0.5em;
 }
 
+.menutitle {
+  text-align: start;
+}
+
 .itemabout {
   flex-grow: 1;
 }
@@ -366,12 +392,8 @@ html a:active {
   font-size: 18px;
 }
 
-.contactpage, .history, .aboutus {
-  font-size: 18px;
-  color: #FCBC26;
-  background-color: #222021;
-}
-
+/* Snack labled items are for the navagation bars to the 
+different menu sections */
 .snackbar {
   display: inline-flex;
   margin: 1em 1em -1.5em 1em;
@@ -381,22 +403,25 @@ html a:active {
   height: 1.5em;
 }
 
+.snacklink {
+  margin: 0.5em;
+}
+
+/* Choice grid is the grid for snack bar */
 .choicegrid {
   margin: 0;
   padding: 0;
 }
 
-.menutitle {
-  text-align: start;
-}
-
 /* End Of menu */
 /*Star of Contacts*/
-.condiv {
-  display: grid;
+.history, .aboutus {
+  font-size: 18px;
+  color: #FCBC26;
   background-color: #222021;
 }
 
+/*Classes for the hours div's*/
 .hours {
   display: grid;
 }
@@ -437,10 +462,12 @@ html a:active {
   box-shadow: 4px 10px #222021;
 }
 
+/*Class for the Header in the about us div*/
 .infoheadclass {
   text-align: center;
 }
 
+/*Camp classes are for the campus img*/
 .campdiv {
   display: grid;
   justify-content: center;
@@ -451,6 +478,8 @@ html a:active {
   width: 300px;
 }
 
+/*Hidden grid is for the grids displayed only at higher 
+screen sizes*/
 .hiddengrid {
   display: grid;
 }
@@ -471,6 +500,7 @@ html a:active {
   margin-right: -0.5em;
 }
 
+/*Cons classes are for Contact Social Medias*/
 .consgrid {
   display: grid;
 }
@@ -485,6 +515,7 @@ html a:active {
   color: rgba(255, 255, 255, 0.658);
 }
 
+/*Pizza flex classes are for the youtube video iframes*/
 .pizzaflex {
   display: inline-flex;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

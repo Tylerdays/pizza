@@ -36,13 +36,16 @@
     }
     header{
         width: 95.75%;
-        margin-left: -1em;
-        margin-bottom: -1em;
+        position: relative;
+        left: 5vw;
+        right: 5vw;
+        
  
     }
     #topbar{
         width: 96%;
         margin-right: 5vw;
+        
         
     }
     .itemabout{
@@ -60,13 +63,14 @@
 
 @media only screen and (min-width: 1000px){
     /* For Mobile for desktop */
-    .menucontainer{
-        position: relative;
-        left: 10vw;
+.menucontainer{
+        position: absolute;
+        left: 2em;
+        padding-right: 100px;
     }
 
-    .menugrid{
-        grid-template-columns: repeat(3, 1fr);
+.menugrid{
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .itemdiv{

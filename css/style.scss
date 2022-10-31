@@ -84,12 +84,16 @@ html{
 /*For the google maps iframe inserts*/
 .mapdiv{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0;
+    margin-right: -.5em;
     iframe{
-        width: 95vw;
-        height: 400px;
-        box-shadow:  4px 5px $tcol;
-        margin: 1em;
+        position:relative;
+        right: .5em;
+        padding: 0;
+        width: 99vw;
+        height: 70vw;
+        box-shadow:  1px 1px $tcol;
+
     }
     }
 
@@ -117,11 +121,10 @@ menu.html and the menu grid and */
 .menucontainer{
 font-size: $fsmob;
 background-color: $bgcol;
-width: 90vw;
+width: 80vw;
 position: relative;
-left: 5vw;
-right: 5vw;
-margin-right: 10vw;
+left: 0vw;
+
 }
 .iteminfo{
  padding: 1em;
@@ -129,14 +132,20 @@ margin-right: 10vw;
         margin-top: -1.5em;
     }
 .menuhead{
-background-color: $bgcol;
-padding-bottom: 1em;
+    display: inline;
+    background-color: $bgcol;
+    margin-bottom: -1em;
+    padding: 0;
 }
 .menugrid{
 display: inline-grid;
 background-color: $tcol;
 color: $fcol;
+position: relative;
+right: 1vw;
+left: 1vw;
 gap: 1em;
+margin-top: 1em;
 margin-bottom: 1em;
 padding: 1em 0;
 box-shadow:  4px 10px $tcol;
@@ -254,6 +263,12 @@ different menu sections */
     margin: 1em;
     box-shadow:  4px 10px $tcol;
 }
+.contactdiv{
+    text-align: center;
+    position: relative;
+    left: 23vw;
+    width: 40vw;
+}
 /*Class for the Header in the about us div*/
 .infoheadclass{
     text-align: center;
@@ -271,6 +286,8 @@ different menu sections */
 screen sizes*/
 .hiddengrid{
     display: grid;
+    position: relative;
+    left: 5vw;
 }
 .hiddendiv{
     background-image: url(https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -281,7 +298,7 @@ screen sizes*/
 .hiddendiv, .hiddendiv2{
     display: none;
     width: 90vw;
-    height:65vh;
+    height: 700px;
     box-shadow:  5px 5px $tcol;
     margin-right: -.5em;
 }
@@ -297,12 +314,25 @@ screen sizes*/
     font-size: $fsmob;
     justify-content: center;
     color: $fcol;
+    position: relative;
+    left: 36vw;
+    width: 20vw;
+    margin-bottom: 1em;
+    box-shadow:  5px 5px $tcol; 
+    padding: 1em;
 }
-/*Pizza flex classes are for the youtube video iframes*/
+.socialicons{
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    position: relative;
+
+}
 .pizzaflex{
-    display: inline-flex;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-left: -1em;
 }
+
+/*Pizza flex classes are for the youtube video iframes*/
 .pizzatube{
     width: 90vw;
     /* I know the height is set to width, I did it by accident 
@@ -310,6 +340,8 @@ screen sizes*/
     on near any size without borders or img squish
      */
     height: 50.78vw;
+    position: relative;
+    left: 5vw;
     margin: 1em;
     box-shadow:  5px 5px $tcol;
 }

@@ -180,9 +180,6 @@ html {
     left: 2em;
     padding-right: 100px;
   }
-  .menugrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .itemdiv {
     margin-right: 2em;
   }

@@ -193,13 +193,13 @@ html {
   scroll-behavior: smooth;
 }
 html a:link {
-  color: #222021;
+  color: #FCBC26;
 }
 html a:visited {
   color: rgb(185, 12, 12);
 }
 html a:hover {
-  color: #222021;
+  color: #FCBC26;
 }
 html a:active {
   color: rgb(77, 224, 51);
@@ -344,6 +344,10 @@ menu.html and the menu grid and */
   margin-bottom: 1em;
   padding: 1em 0;
   box-shadow: 4px 10px #222021;
+}
+
+.snackbar > a:link {
+  color: #222021;
 }
 
 .foodimage {

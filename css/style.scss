@@ -7,13 +7,13 @@ html{
     padding: 0;
     scroll-behavior: smooth;
     a:link{
-        color: $tcol;
+        color: $bgcol;
     }
     a:visited{
         color: rgb(185, 12, 12);
     }
     a:hover{
-        color: $tcol;
+        color: $bgcol;
     }
     a:active{
         color: rgb(77, 224, 51);
@@ -135,6 +135,7 @@ menu.html and the menu grid and */
     background-color: $bgcol;
     margin-bottom: -1em;
     padding: 0;
+    
 }
 .menugrid{
 display: inline-grid;
@@ -149,6 +150,10 @@ margin-bottom: 1em;
 padding: 1em 0;
 box-shadow:  4px 10px $tcol;
 }
+.snackbar>a:link{
+            color: $tcol;
+        }
+
 .foodimage{
 margin: 1em;
 height: 75px;

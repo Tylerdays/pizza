@@ -7,13 +7,13 @@ html{
     padding: 0;
     scroll-behavior: smooth;
     a:link{
-        color: $bgcol;
+        color: $tcol;
     }
     a:visited{
         color: rgb(185, 12, 12);
     }
     a:hover{
-        color: $bgcol;
+        color: $tcol;
     }
     a:active{
         color: rgb(77, 224, 51);

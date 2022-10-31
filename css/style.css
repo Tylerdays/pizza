@@ -193,13 +193,13 @@ html {
   scroll-behavior: smooth;
 }
 html a:link {
-  color: #FCBC26;
+  color: #222021;
 }
 html a:visited {
   color: rgb(185, 12, 12);
 }
 html a:hover {
-  color: #FCBC26;
+  color: #222021;
 }
 html a:active {
   color: rgb(77, 224, 51);
